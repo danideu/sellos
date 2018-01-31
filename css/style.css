@@ -55,6 +55,20 @@ p{
     top: -440px;
 }
 
+.previs-top-center{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.previs-bottom-left{
+  position: absolute;
+  bottom: 3%;
+  left: 25%;
+}
+
 .previs-tarjeta {
     position: absolute;
     right: 0;
@@ -73,6 +87,12 @@ p{
     top: -110px;
 }
 
+.previs-top4{
+    position: absolute;
+    left: 15%;
+    top: -145px;
+}
+
 .previs-bottom{
   position: absolute;
   left: 10%;
@@ -85,6 +105,17 @@ p{
     bottom: -77px;
 }
 
+.previs-bottom-right2 {
+    position: absolute;
+    bottom: 3%;
+    right: 25%;
+}
+
+.previs-bottom-right3 {
+    position: absolute;
+    right: 10%;
+    bottom: -157px;
+}
 .previs-sello {
     position: absolute;
     right: -180px;
@@ -101,6 +132,43 @@ p{
 .absolute-center-left {
     position: absolute;
     left: -98px;
+}
+
+.absolute-center-right {
+    position: absolute;
+    right: -98px;
+}
+
+.absolute-center-right1{
+  position: absolute;
+  top: 55%;
+  right: 20%;
+  height: 30%;
+  width: 50%;
+  margin: -15% 0 0 -33%;
+}
+
+.absolute-center-right2{
+  position: absolute;
+  top: 54%;
+  right: 16%;
+  height: 30%;
+  width: 50%;
+  margin: -15% 0 0 -33%;
+}
+
+.absolute-center-right3{
+  position: absolute;
+  top: 59%;
+  right: 12%;
+  height: 30%;
+  width: 50%;
+  margin: -15% 0 0 -33%;
+}
+
+.absolute-center-right4{
+  position: absolute;
+  right: -220px;
 }
 
 .rota5{
