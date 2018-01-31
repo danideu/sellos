@@ -7,7 +7,7 @@ body{
 
 /* Tipografía */
 h1{
-  font-size: 64px;
+  font-size: 50px;
   font-weight: bold;
   letter-spacing: -2.29px;
   color: white;
@@ -19,9 +19,29 @@ p{
 	letter-spacing: -0.19px;
 }
 
+.section{
+  overflow: hidden;
+}
+
 .p60{padding: 60px;}
+.pt20 {padding-top: 20px;}
+.pt40 {padding-top: 40px;}
 .pt80{padding-top: 80px;}
 
+.left{float: left !important;}
+.right{float: right !important;}
+
+.previs-top {
+    position: absolute;
+    left: 15%;
+    top: -440px;
+}
+
+.previs-tarjeta {
+    position: absolute;
+    right: 0;
+    bottom: -276px;
+}
 
 .rota5{
 	transform: rotate(5deg);
@@ -50,6 +70,10 @@ p{
   background: url(../img/tres/fondo.png) no-repeat;
 }
 
+.fondo4{
+  background-size: cover;
+  background: url(../img/cuatro/fondo.png) no-repeat;
+}
 
 .centered{
 	position: absolute;
@@ -104,8 +128,11 @@ p{
   .cobi img{width: 75%;}
 
 .titulodesc {
-    //margin-bottom: 60px;
     padding-top: 60px;
+}
+
+.fondo4 .titulodesc{
+  padding-top: 100px;
 }
 
 #fp-nav ul li a span, .fp-slidesNav ul li a span{
