@@ -11,7 +11,7 @@ h1{
   font-weight: bold;
   letter-spacing: -2.29px;
   color: white;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 
 p{
@@ -24,12 +24,30 @@ p{
 }
 
 .p60{padding: 60px;}
-.pt20 {padding-top: 20px;}
-.pt40 {padding-top: 40px;}
+.pt20{padding-top: 20px;}
+.pt40{padding-top: 40px;}
 .pt80{padding-top: 80px;}
+.pb10{padding-bottom: 10px;}
 
 .left{float: left !important;}
 .right{float: right !important;}
+
+
+.flex-parent{
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.flex-child{
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //flex-direction: column;
+}
+
 
 .previs-top {
     position: absolute;
@@ -43,12 +61,51 @@ p{
     bottom: -276px;
 }
 
+.previs-top2{
+  position: absolute;
+  right: 10%;
+  top: -77px;
+}
+
+.previs-bottom{
+  position: absolute;
+  left: 10%;
+  bottom: -77px;
+}
+
+.previs-sello {
+    position: absolute;
+    right: -180px;
+    bottom: -380px;
+}
+
 .rota5{
 	transform: rotate(5deg);
     -ms-transform: rotate(5deg);
     -moz-transform: rotate(5deg);
     -webkit-transform: rotate(5deg);
     -o-transform: rotate(5deg);
+}
+.rota3{
+  transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -webkit-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+}
+.rotam3{
+  transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+}
+
+.absolute-center{
+  position:absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 
 .minidesc{font-size: 14px; font-style: italic;}
@@ -75,14 +132,22 @@ p{
   background: url(../img/cuatro/fondo.png) no-repeat;
 }
 
+.fondo5{
+  background-size: cover;
+  background: url(../img/cinco/fondo.jpg) no-repeat;
+}
+
 .centered{
 	position: absolute;
 	top: 50%;
   	transform: translateY(-50%);
 }
-.centered img{
+.centered img, .max-img{
 	max-width: 100%;
 }
+
+.imgw70{width: 70%;}
+.imgmw320{max-width: 320px;}
 
 .first .contenido,
 .third .contenido{top: 40%}
