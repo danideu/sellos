@@ -67,16 +67,40 @@ p{
   top: -77px;
 }
 
+.previs-top3{
+    position: absolute;
+    left: 15%;
+    top: -110px;
+}
+
 .previs-bottom{
   position: absolute;
   left: 10%;
   bottom: -77px;
 }
 
+.previs-bottom-right {
+    position: absolute;
+    right: 10%;
+    bottom: -77px;
+}
+
 .previs-sello {
     position: absolute;
     right: -180px;
     bottom: -380px;
+}
+
+.absolute-center{
+  position:absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.absolute-center-left {
+    position: absolute;
+    left: -98px;
 }
 
 .rota5{
@@ -101,40 +125,48 @@ p{
     -o-transform: rotate(-3deg);
 }
 
-.absolute-center{
-  position:absolute;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-}
-
 .minidesc{font-size: 14px; font-style: italic;}
 
 .fullheight{height: 100%;}
 
 .fondo1{
-	background-size: cover;
-  background: url(../img/uno/fondo.jpg) no-repeat;
+	background: url(../img/uno/fondo.jpg) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .fondo2{
-  background-size: cover;
   background: url(../img/dos/fondo.png) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .fondo3{
-  background-size: cover;
   background: url(../img/tres/fondo.png) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .fondo4{
-  background-size: cover;
   background: url(../img/cuatro/fondo.png) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .fondo5{
-  background-size: cover;
   background: url(../img/cinco/fondo.jpg) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .centered{
