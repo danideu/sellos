@@ -4,7 +4,9 @@ jQuery(document).ready(function($){
 
 	updateNavigation();
 	$(window).on('scroll', function(){
-		updateNavigation();
+        if (SCROLLCONTROLL_moveScroll()) {
+            updateNavigation();
+        }
 	});
 
 	//smooth scroll to the section
