@@ -1,0 +1,6 @@
+.DS_Store
+/node_modules
+
+#ignore .idea PhpStorm ID
+.idea/*
+.idea/workspace.xml
