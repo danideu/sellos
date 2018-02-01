@@ -1,6 +1,10 @@
 
-body {
+body, html {
     overflow: hidden;
+}
+
+.invisible {
+    opacity: 0;
 }
 
 #fullpage {
@@ -29,10 +33,18 @@ section {
     width: 100%;
     height: 100%;
 }
-
 .cobi {
     position: absolute;
 }
+.cobi.no-animate {
+    left: -30%;
+    opacity: 0;
+}
+.cobi.animated {
+    left: 30%;
+    opacity: 1;
+}
+
 
 .scroll-down-wrap {
     position: fixed !important;
