@@ -31,7 +31,7 @@ p{
 
 .left{float: left !important;}
 .right{float: right !important;}
-
+.mauto{margin: 0 auto;}
 
 .flex-parent{
   display: -ms-flex;
@@ -63,16 +63,58 @@ p{
     margin: 0 auto;
 }
 
+.previs-top-left1{
+    position: absolute;
+    left: 12%;
+    top: -164px;
+}
+
+.previs-top-left2 {
+    position: absolute;
+    left: -242px;
+    top: -164px;
+}
+
+.previs-top-left3 {
+    position: absolute;
+    left: -17%;
+    top: 2%;
+}
+
 .previs-top-right{
     position: absolute;
     right: 21%;
     top: 30%;
 }
 
+.previs-top-right2{
+  position: absolute;
+  right: 10%;
+  top: -164px;
+}
+
+.previs-top-right3{
+  position: absolute;
+  right: 12%;
+  top: -164px;
+}
+
+.previs-top-right4{
+  position: absolute;
+  right: -15%;
+  top: -164px;
+}
+
 .previs-bottom-left{
   position: absolute;
   bottom: 3%;
   left: 25%;
+}
+
+.previs-bottom-left2{
+  position: absolute;
+  left: 4%;
+  bottom: -27%;
 }
 
 .previs-tarjeta {
@@ -105,6 +147,14 @@ p{
   bottom: -77px;
 }
 
+.previs-bottom-center{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -117px;
+  margin: 0 auto;
+}
+
 .previs-bottom-right {
     position: absolute;
     right: 10%;
@@ -122,6 +172,12 @@ p{
     right: 10%;
     bottom: -157px;
 }
+
+.previs-bottom-right4 {
+    position: absolute;
+    right: -23%;
+    bottom: -28%;
+}
 .previs-sello {
     position: absolute;
     right: -180px;
@@ -133,6 +189,22 @@ p{
   left: 0;
   right: 0;
   margin: 0 auto;
+}
+
+.absolute-center-up{
+  position:absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: -114px;
+}
+
+.absolute-center-up2{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: -214px;
 }
 
 .absolute-center-bottom1{
@@ -151,6 +223,11 @@ p{
 .absolute-center-left2 {
     position: absolute;
     left: 23%;
+}
+
+.absolute-center-left3 {
+    position: absolute;
+    left: -213px;;
 }
 
 .absolute-center-right {
@@ -190,6 +267,17 @@ p{
   right: -220px;
 }
 
+.absolute-center-right5 {
+  position: absolute;
+  right: 23%;
+  bottom: 11%;
+}
+
+.absolute-center-right6 {
+  position: absolute;
+  right: -232px;
+}
+
 .rota5{
 	transform: rotate(5deg);
     -ms-transform: rotate(5deg);
@@ -204,6 +292,15 @@ p{
     -webkit-transform: rotate(3deg);
     -o-transform: rotate(3deg);
 }
+
+.rota25{
+  transform: rotate(25deg);
+    -ms-transform: rotate(25deg);
+    -moz-transform: rotate(25deg);
+    -webkit-transform: rotate(25deg);
+    -o-transform: rotate(25deg);
+}
+
 .rotam3{
   transform: rotate(-3deg);
     -ms-transform: rotate(-3deg);
@@ -256,6 +353,30 @@ p{
   background-size: cover;
 }
 
+.fondo6{
+  background: url(../img/seis/fondo.jpg) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.fondo7{
+  background: url(../img/siete/fondo.jpg) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.fondo8{
+  background: url(../img/ocho/fondo.jpg) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .centered{
 	position: absolute;
 	top: 50%;
@@ -267,6 +388,7 @@ p{
 
 .imgw70{width: 70%;}
 .imgmw320{max-width: 320px;}
+.imgmw-media{max-width: 620px;}
 
 .first .contenido,
 .third .contenido{top: 40%}
