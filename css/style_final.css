@@ -45,6 +45,75 @@ section {
     opacity: 1;
 }
 
+.aros {
+    position: relative;
+}
+
+.aros img.rings_all {
+    visibility: hidden;
+}
+
+.aros img.rings {
+    position: absolute;
+    width: 100%;
+    max-width: 365px;
+    opacity: 0;
+}
+
+.aros img.rings.animate {
+    opacity: 1;
+}
+
+.aros img.rings.ring_blue.no-animate {
+    top: -85%;
+    left: -30%;
+}
+
+.aros img.rings.ring_blue.animate {
+    top: 5%;
+    left: 0%;
+}
+
+.aros img.rings.ring_black.no-animate {
+    top: -85%;
+    left: 32.5%;
+}
+
+.aros img.rings.ring_black.animate {
+    top: 0%;
+    left: 32.5%;
+}
+
+.aros img.rings.ring_red.no-animate {
+    top: -85%;
+    right: -30%;
+}
+
+.aros img.rings.ring_red.animate {
+    top: 5%;
+    right: 0%;
+}
+
+.aros img.rings.ring_yellow.no-animate {
+    bottom: -80%;
+    left: -46%;
+}
+
+.aros img.rings.ring_yellow.animate {
+    bottom: 0%;
+    left: 16%;
+}
+
+.aros img.rings.ring_green.no-animate {
+    bottom: -80%;
+    right: -46%;
+}
+
+.aros img.rings.ring_green.animate {
+    bottom: 0%;
+    right: 14%;
+}
+
 
 .scroll-down-wrap {
     position: fixed !important;

@@ -77,10 +77,26 @@ function SCROLLCONTROLL_executeMove (moveTo) {
         case 1:
             switch (internalStep) {
                 case 0:
+                    jQuery(".aros img.rings.ring_blue").switchClass("animate", "no-animate", 500, "easeInOutQuad");
+                    jQuery(".aros img.rings.ring_black").switchClass("animate", "no-animate", 500, "easeInOutQuad");
+                    jQuery(".aros img.rings.ring_red").switchClass("animate", "no-animate", 500, "easeInOutQuad");
+                    jQuery(".aros img.rings.ring_yellow").switchClass("animate", "no-animate", 500, "easeInOutQuad");
+                    jQuery(".aros img.rings.ring_green").switchClass("animate", "no-animate", 500, "easeInOutQuad");
+                    break;
+                case 1:
+                    jQuery(".aros img.rings.ring_blue").switchClass("no-animate", "animate", 500, "easeInOutQuad");
+                    jQuery(".aros img.rings.ring_black").switchClass("no-animate", "animate", 500, "easeInOutQuad");
+                    jQuery(".aros img.rings.ring_red").switchClass("no-animate", "animate", 500, "easeInOutQuad");
+                    jQuery(".aros img.rings.ring_yellow").switchClass("no-animate", "animate", 500, "easeInOutQuad");
+                    jQuery(".aros img.rings.ring_green").switchClass("no-animate", "animate", 500, "easeInOutQuad");
+
                     jQuery(".cobi").switchClass("animate", "no-animate", 500, "easeInOutQuad");
                 break;
-                case 1:
+                case 2:
                     jQuery(".cobi").switchClass("no-animate", "animate", 500, "easeInOutQuad");
+                break;
+                case 3:
+                    
                 break;
             }
         break;
