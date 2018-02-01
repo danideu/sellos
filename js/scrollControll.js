@@ -21,8 +21,8 @@ jQuery("body").scrollsteps({
     down: next,  // callback for the DOWN step scroll event
     left: left,  // callback for the UP step scroll event, all the events are of course optional
     right: right,  // callback for the DOWN step scroll event
-    transitionDuration: 1000, // Duration of the main transition event, for example page transitions in a fullPage scroller.
-    quietPeriodBetweenTwoScrollEvents: 100, // Increases responsiveness, minimum delay between two quiet periods (no scroll events) to force the transition event if the transitionDuration is not completed.
+    transitionDuration: 1500, // Duration of the main transition event, for example page transitions in a fullPage scroller.
+    quietPeriodBetweenTwoScrollEvents: 1000, // Increases responsiveness, minimum delay between two quiet periods (no scroll events) to force the transition event if the transitionDuration is not completed.
 });
 
 jQuery(document).on('touchmove', function() { //touchmove works for iOS, I don't know if Android supports it
@@ -77,29 +77,42 @@ function SCROLLCONTROLL_executeMove (moveTo) {
         case 1:
             switch (internalStep) {
                 case 0:
-                    jQuery(".aros img.rings.ring_blue").switchClass("animate", "no-animate", 500, "easeInOutQuad");
-                    jQuery(".aros img.rings.ring_black").switchClass("animate", "no-animate", 500, "easeInOutQuad");
-                    jQuery(".aros img.rings.ring_red").switchClass("animate", "no-animate", 500, "easeInOutQuad");
-                    jQuery(".aros img.rings.ring_yellow").switchClass("animate", "no-animate", 500, "easeInOutQuad");
-                    jQuery(".aros img.rings.ring_green").switchClass("animate", "no-animate", 500, "easeInOutQuad");
-                    break;
+                    SCROLLCONTROLL_animateUndo(jQuery(".aros img.rings.ring_blue"));
+                    SCROLLCONTROLL_animateUndo(jQuery(".aros img.rings.ring_black"));
+                    SCROLLCONTROLL_animateUndo(jQuery(".aros img.rings.ring_red"));
+                    SCROLLCONTROLL_animateUndo(jQuery(".aros img.rings.ring_yellow"));
+                    SCROLLCONTROLL_animateUndo(jQuery(".aros img.rings.ring_green"));
+                break;
                 case 1:
-                    jQuery(".aros img.rings.ring_blue").switchClass("no-animate", "animate", 500, "easeInOutQuad");
-                    jQuery(".aros img.rings.ring_black").switchClass("no-animate", "animate", 500, "easeInOutQuad");
-                    jQuery(".aros img.rings.ring_red").switchClass("no-animate", "animate", 500, "easeInOutQuad");
-                    jQuery(".aros img.rings.ring_yellow").switchClass("no-animate", "animate", 500, "easeInOutQuad");
-                    jQuery(".aros img.rings.ring_green").switchClass("no-animate", "animate", 500, "easeInOutQuad");
+                    SCROLLCONTROLL_animateDo(jQuery(".aros img.rings.ring_blue"));
+                    SCROLLCONTROLL_animateDo(jQuery(".aros img.rings.ring_black"));
+                    SCROLLCONTROLL_animateDo(jQuery(".aros img.rings.ring_red"));
+                    SCROLLCONTROLL_animateDo(jQuery(".aros img.rings.ring_yellow"));
+                    SCROLLCONTROLL_animateDo(jQuery(".aros img.rings.ring_green"));
 
-                    jQuery(".cobi").switchClass("animate", "no-animate", 500, "easeInOutQuad");
+                    SCROLLCONTROLL_animateUndo(jQuery(".cobi"))
                 break;
                 case 2:
-                    jQuery(".cobi").switchClass("no-animate", "animate", 500, "easeInOutQuad");
+                    SCROLLCONTROLL_animateDo(jQuery(".cobi"));
+
+                    SCROLLCONTROLL_animateUndo(jQuery("section.first .diapo.diapo_1"));
+                    SCROLLCONTROLL_animateUndo(jQuery("section.first .diapo.diapo_2"));
                 break;
                 case 3:
-                    
+                    SCROLLCONTROLL_animateDo(jQuery("section.first .diapo.diapo_1"));
+                    SCROLLCONTROLL_animateDo(jQuery("section.first .diapo.diapo_2"));
                 break;
             }
         break;
 
     }
+}
+
+
+function SCROLLCONTROLL_animateDo (elementReferer) {
+    jQuery(elementReferer).switchClass("no-animate", "animate", 500, "easeInOutQuad");
+}
+
+function SCROLLCONTROLL_animateUndo (elementReferer) {
+    jQuery(elementReferer).switchClass("animate", "no-animate", 500, "easeInOutQuad");
 }

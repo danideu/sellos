@@ -28,90 +28,106 @@ section {
 }
 
 .diapo {
+    position: relative;
     display: inline-block;
     float: left;
     width: 100%;
     height: 100%;
 }
-.cobi {
+
+/* ********************************************************************************************************************/
+/* ********** Section 1 ***********************************************************************************************/
+
+section.first .cobi {
     position: absolute;
 }
-.cobi.no-animate {
+
+section.first .cobi.no-animate {
     left: -30%;
     opacity: 0;
 }
-.cobi.animated {
+
+section.first .cobi.animated {
     left: 30%;
     opacity: 1;
 }
 
-.aros {
+section.first .aros {
     position: relative;
 }
 
-.aros img.rings_all {
+section.first .aros img.rings_all {
     visibility: hidden;
 }
 
-.aros img.rings {
+section.first .aros img.rings {
     position: absolute;
     width: 100%;
     max-width: 365px;
     opacity: 0;
 }
 
-.aros img.rings.animate {
+section.first .aros img.rings.animate {
     opacity: 1;
 }
 
-.aros img.rings.ring_blue.no-animate {
+section.first .aros img.rings.ring_blue.no-animate {
     top: -85%;
     left: -30%;
 }
 
-.aros img.rings.ring_blue.animate {
+section.first .aros img.rings.ring_blue.animate {
     top: 5%;
     left: 0%;
 }
 
-.aros img.rings.ring_black.no-animate {
+section.first .aros img.rings.ring_black.no-animate {
     top: -85%;
     left: 32.5%;
 }
 
-.aros img.rings.ring_black.animate {
+section.first .aros img.rings.ring_black.animate {
     top: 0%;
     left: 32.5%;
 }
 
-.aros img.rings.ring_red.no-animate {
+section.first .aros img.rings.ring_red.no-animate {
     top: -85%;
     right: -30%;
 }
 
-.aros img.rings.ring_red.animate {
+section.first .aros img.rings.ring_red.animate {
     top: 5%;
     right: 0%;
 }
 
-.aros img.rings.ring_yellow.no-animate {
+section.first .aros img.rings.ring_yellow.no-animate {
     bottom: -80%;
     left: -46%;
 }
 
-.aros img.rings.ring_yellow.animate {
+section.first .aros img.rings.ring_yellow.animate {
     bottom: 0%;
     left: 16%;
 }
 
-.aros img.rings.ring_green.no-animate {
+section.first .aros img.rings.ring_green.no-animate {
     bottom: -80%;
     right: -46%;
 }
 
-.aros img.rings.ring_green.animate {
+section.first .aros img.rings.ring_green.animate {
     bottom: 0%;
     right: 14%;
+}
+
+section.first .diapo.diapo_1.no-animate {
+    top: 0%;
+}
+
+section.first .diapo.diapo_1.animate,
+section.first .diapo.diapo_2.animate {
+    top: -100%;
 }
 
 
