@@ -63,6 +63,12 @@ p{
     margin: 0 auto;
 }
 
+.previs-top-right{
+    position: absolute;
+    right: 21%;
+    top: 30%;
+}
+
 .previs-bottom-left{
   position: absolute;
   bottom: 3%;
@@ -129,9 +135,22 @@ p{
   margin: 0 auto;
 }
 
+.absolute-center-bottom1{
+  position:absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 23%
+}
+
 .absolute-center-left {
     position: absolute;
     left: -98px;
+}
+
+.absolute-center-left2 {
+    position: absolute;
+    left: 23%;
 }
 
 .absolute-center-right {
