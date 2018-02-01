@@ -1,6 +1,26 @@
+
+body {
+    overflow: hidden;
+}
+
+#fullpage {
+    height: 100%;
+    position: relative;
+    touch-action: none;
+    transition: all 700ms ease;
+    transform: translate3d(0px, 0px, 0px);
+}
+
 .icon,
 .share-button {
     position: fixed !important;
+}
+
+section {
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 100%;
 }
 
 .diapo {
@@ -8,4 +28,12 @@
     float: left;
     width: 100%;
     height: 100%;
+}
+
+.cobi {
+    position: absolute;
+}
+
+.scroll-down-wrap {
+    position: fixed !important;
 }
