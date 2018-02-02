@@ -150,6 +150,35 @@ section.first .diapo.diapo_2.animate {
     top: -100%;
 }
 
+section.first .diapo.diapo_2 .text.no-animate {
+    position: relative;
+    top: 0px;
+    left: -100%;
+    opacity: 0;
+}
+
+section.first .diapo.diapo_2 .text.animate {
+    position: relative;
+    top: 0px;
+    left: 0%;
+    opacity: 1;
+}
+
+section.first .diapo.diapo_2 .image {
+    position: absolute;
+    bottom: -160%;
+    right: -57%;
+
+    opacity: 0;
+}
+
+section.first .diapo.diapo_2 .claim.no-animate {
+    opacity: 0;
+}
+
+section.first .diapo.diapo_2 .claim.animate {
+    opacity: 1;
+}
 
 .scroll-down-wrap {
     position: fixed !important;

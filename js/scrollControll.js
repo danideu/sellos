@@ -101,6 +101,24 @@ function SCROLLCONTROLL_executeMove (moveTo) {
                 case 3:
                     SCROLLCONTROLL_animateDo(jQuery("section.first .diapo.diapo_1"));
                     SCROLLCONTROLL_animateDo(jQuery("section.first .diapo.diapo_2"));
+
+                    SCROLLCONTROLL_animateUndo(jQuery("section.first .diapo.diapo_2 .text"));
+                    break;
+
+                case 4:
+                    SCROLLCONTROLL_animateDo(jQuery("section.first .diapo.diapo_2 .text"));
+
+                    SCROLLCONTROLL_animateUndo("section1-diapo2-sello");
+                break;
+
+                case 5:
+                    SCROLLCONTROLL_animateDo("section1-diapo2-sello");
+
+                    SCROLLCONTROLL_animateUndo(jQuery("section.first .diapo.diapo_2 .claim"));
+                break;
+
+                case 6:
+                    SCROLLCONTROLL_animateDo(jQuery("section.first .diapo.diapo_2 .claim"));
                 break;
             }
         break;
@@ -110,9 +128,35 @@ function SCROLLCONTROLL_executeMove (moveTo) {
 
 
 function SCROLLCONTROLL_animateDo (elementReferer) {
-    jQuery(elementReferer).switchClass("no-animate", "animate", 500, "easeInOutQuad");
+
+    switch(elementReferer) {
+        case "section1-diapo2-sello":
+            jQuery('section.first .diapo.diapo_2 .image').animate({
+                bottom: [-150, 'easeOutQuint'],
+                right: 0,
+                opacity: 1
+            }, 500);
+        break;
+
+        default:
+            jQuery(elementReferer).switchClass("no-animate", "animate", 500, "easeInOutQuad");
+
+    }
+
 }
 
 function SCROLLCONTROLL_animateUndo (elementReferer) {
-    jQuery(elementReferer).switchClass("animate", "no-animate", 500, "easeInOutQuad");
+    switch(elementReferer) {
+        case "section1-diapo2-sello":
+            jQuery('section.first .diapo.diapo_2 .image').animate({
+                bottom: ["-160%", 'easeOutQuint'],
+                right: "-57%",
+                opacity: 0
+            }, 500);
+        break;
+
+        default:
+            jQuery(elementReferer).switchClass("animate", "no-animate", 500, "easeInOutQuad");
+
+    }
 }
