@@ -19,6 +19,7 @@
   $('#fullpage').fullpage({
 
     navigation: true,
+    responsiveWidth: 415,
     onLeave: function(index, nextIndex, direction) {
     
       /**

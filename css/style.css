@@ -105,6 +105,12 @@ p{
   top: -164px;
 }
 
+.previs-top-right5{
+  position: absolute;
+  right: 10%;
+  top: -277px;
+}
+
 .previs-bottom-left{
   position: absolute;
   bottom: 3%;
@@ -391,7 +397,7 @@ p{
 .imgmw-media{max-width: 620px;}
 
 .first .contenido,
-.third .contenido{top: 40%}
+.third .contenido{top: 40%;z-index: 999}
 .third .titulodesc p {
     padding-bottom: 25px;
 }
@@ -423,7 +429,10 @@ p{
 
 .aros{
 	opacity: .7;
-	top: 40%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 
 .cobi {
@@ -1082,6 +1091,88 @@ p{
 
 /* FIN FULL SCREEN BUTTON */
 
+@media only screen
+       and (max-device-width: 767px)
+       and (min-device-width: 375px){
+    
+    h1, p{
+      text-align: left !important;
+    }
+
+    h1{
+      font-size: 36px;
+    }
+
+    p{
+      font-size: 18px;
+    }
+
+    .share-button, .icon, #fp-nav, .scroll-down-wrap{
+      display: none;
+    }
+
+    .cobi{
+      width: 156px;
+    }
+
+    .centered{
+      position: inherit;
+      top: inherit;
+      transform: inherit;
+    }
+
+    .previs-sello, .previs-top,.previs-top-center,.previs-top-left1,.previs-top-left2,.previs-top-left3,.previs-top-right,.previs-top-right2,.previs-top-right3,.previs-top-right4,.previs-top-right5,.previs-bottom-left,.previs-bottom-left2,.previs-tarjeta,.previs-top2,.previs-top3,.previs-top4,.previs-bottom,.previs-bottom-center,.previs-bottom-right,.previs-bottom-right2,.previs-bottom-right3,.previs-bottom-right4,.absolute-center,.absolute-center-up,.absolute-center-up2,.absolute-center-bottom1,.absolute-center-left,.absolute-center-left2,.absolute-center-left3,.absolute-center-right,.absolute-center-right1,.absolute-center-right2,.absolute-center-right3, .absolute-center-right4, .absolute-center-right5, .absolute-center-right6{
+      position: inherit;
+      top: inherit;
+      bottom: inherit;
+      right: inherit;
+      left: inherit;
+      width: inherit;
+      margin: inherit;
+      height: inherit;
+    }
+
+    .rota5,.rota3,.rota25,.rotam3{
+      transform: inherit;
+      -ms-transform: inherit;
+      -moz-transform: inherit;
+      -webkit-transform: inherit;
+      -o-transform: inherit;
+    }
+
+    
+    .flex-parent, .flex-child{
+      display: inherit;
+      display: inherit;
+      display: inherit;
+      align-items: inherit;
+      justify-content: inherit;
+    }
+}
+
+/*@media (max-width: 575px) {
+  
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767px) {
+  
+}*/
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+}
 
 
 
