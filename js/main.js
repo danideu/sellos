@@ -1,90 +1,89 @@
-
 (function($) {
+  
+  'use strict';
 
-    if (document.location.href.indexOf("index_final") === -1) {
-        'use strict';
+  // variables
+  var $isAnimatedSecond = $('.second .is-animated'),
+      $isAnimatedSecondSingle = $('.second .is-animated__single'),
+      $isAnimatedThird = $('.third .is-animated'),
+      $isAnimatedThirdSingle = $('.third .is-animated__single'),
+      $isAnimatedFourth = $('.fourth .is-animated'),
+      $isAnimatedFourthSingle = $('.fourth .is-animated__single');
+  //var $contScroll = 0;
 
-        // variables
-        var $isAnimatedSecond = $('.second .is-animated'),
-            $isAnimatedSecondSingle = $('.second .is-animated__single'),
-            $isAnimatedThird = $('.third .is-animated'),
-            $isAnimatedThirdSingle = $('.third .is-animated__single'),
-            $isAnimatedFourth = $('.fourth .is-animated'),
-            $isAnimatedFourthSingle = $('.fourth .is-animated__single');
-        //var $contScroll = 0;
+  /*$(document).on("mousewheel DOMMouseScroll", function contScroll(num) {
+    $contScroll += $contScroll;
+    });*/
 
-        /*$(document).on("mousewheel DOMMouseScroll", function contScroll(num) {
-          $contScroll += $contScroll;
-          });*/
+  // initialize fullPage
+  $('#fullpage').fullpage({
 
-        // initialize fullPage
-        $('#fullpage').fullpage({
+    navigation: true,
+    responsiveWidth: 415,
+    onLeave: function(index, nextIndex, direction) {
+    
+      /**
+      * use the following condition: 
+      *
+      *   if( index == 1 && direction == 'down' ) {
+      *
+      * if you haven't enabled the dot navigation
+      * or you aren't interested in the animations that occur 
+      * when you jump (using the dot navigation) 
+      * from the first section to another sections 
+      */
+      
+      // first animation
 
-            navigation: true,
-            onLeave: function (index, nextIndex, direction) {
+      if( index == 1 && nextIndex == 2) { 
+        $isAnimatedSecond.addClass('animated fadeInUpBig'); 
+        $isAnimatedSecond.eq(0).css('animation-delay', '.3s');
+        $isAnimatedSecond.eq(1).css('animation-delay', '1.8s');
+        $isAnimatedSecond.eq(2).css('animation-delay', '.9s');
+        $isAnimatedSecondSingle.addClass('animated rollIn').css('animation-delay', '1.7s');
+      }
 
-                /**
-                 * use the following condition:
-                 *
-                 *   if( index == 1 && direction == 'down' ) {
-          *
-          * if you haven't enabled the dot navigation
-          * or you aren't interested in the animations that occur
-          * when you jump (using the dot navigation)
-          * from the first section to another sections
-          */
+    /**
+      * use the following condition: 
+      *
+      *   else if( index == 2 && direction == 'down' ) {
+      *
+      * if you haven't enabled the dot navigation
+      * or you aren't interested in the animations that occur 
+      * when you jump (using the dot navigation) from the first section to the third one 
+      */
+      
+      // second animation
+      else if( ( index == 1 || index == 2 ) && nextIndex == 3 ) {
+        $isAnimatedThird.eq(0).addClass('animated fadeInRightBig').css('animation-delay', '.3s'); 
+        $isAnimatedThird.eq(1).addClass('animated fadeInLeftBig').css('animation-delay', '.6s');
+        $isAnimatedThirdSingle.addClass('animated bounceInDown').css('animation-delay', '1.2s');
+      }
 
-                // first animation
-
-                if (index == 1 && nextIndex == 2) {
-                    $isAnimatedSecond.addClass('animated fadeInUpBig');
-                    $isAnimatedSecond.eq(0).css('animation-delay', '.3s');
-                    $isAnimatedSecond.eq(1).css('animation-delay', '1.8s');
-                    $isAnimatedSecond.eq(2).css('animation-delay', '.9s');
-                    $isAnimatedSecondSingle.addClass('animated rollIn').css('animation-delay', '1.7s');
-                }
-
-                /**
-                 * use the following condition:
-                 *
-                 *   else if( index == 2 && direction == 'down' ) {
-          *
-          * if you haven't enabled the dot navigation
-          * or you aren't interested in the animations that occur
-          * when you jump (using the dot navigation) from the first section to the third one
-          */
-
-                // second animation
-                else if (( index == 1 || index == 2 ) && nextIndex == 3) {
-                    $isAnimatedThird.eq(0).addClass('animated fadeInRightBig').css('animation-delay', '.3s');
-                    $isAnimatedThird.eq(1).addClass('animated fadeInLeftBig').css('animation-delay', '.6s');
-                    $isAnimatedThirdSingle.addClass('animated bounceInDown').css('animation-delay', '1.2s');
-                }
-
-
-                /**
-                 * use the following condition:
-                 *
-                 *   else if( index == 3 && direction == 'down' ) {
-          *
-          * if you haven't enabled the dot navigation
-          * or you aren't interested in the animations that occur
-          * when you jump (using the dot navigation)
-          * from the first or second section to the fourth one
-          */
-
-                // third animation
-                else if (( index == 1 || index == 2 || index == 3 ) && nextIndex == 4) {
-                    $isAnimatedFourth.addClass('animated zoomIn').css('animation-delay', '.6s');
-                    $isAnimatedFourthSingle.addClass('animated lightSpeedIn').css('animation-delay', '1.2s');
-                    $isAnimatedFourthSingle.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
-                        $(this).removeClass('lightSpeedIn').addClass('zoomOutDown');
-                    });
-                }
-            }
-
+      
+     /**
+      * use the following condition:
+      *
+      *   else if( index == 3 && direction == 'down' ) {
+      *
+      * if you haven't enabled the dot navigation
+      * or you aren't interested in the animations that occur 
+      * when you jump (using the dot navigation) 
+      * from the first or second section to the fourth one 
+      */
+      
+      // third animation
+      else if( ( index == 1 || index == 2 || index == 3 ) && nextIndex == 4 ) {
+        $isAnimatedFourth.addClass('animated zoomIn').css('animation-delay', '.6s');
+        $isAnimatedFourthSingle.addClass('animated lightSpeedIn').css('animation-delay', '1.2s');
+        $isAnimatedFourthSingle.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+          $(this).removeClass('lightSpeedIn').addClass('zoomOutDown');
         });
+      }
     }
+
+  });
+  
 })(jQuery);
 
 
@@ -94,12 +93,12 @@ postShareButtonClick = $(function (){
         button = $(".share-button > a"),
         icons = $(".share-button > .icon-wrapper"),
         close = $(".close-social-icons");
-
+    
     function init(){
         button.on("click", toggle);
         close.on("click", closeIcons);
     }
-
+    
     function toggle(e){
         if (buttonWrapper.hasClass("active")){
             closeIcons();
@@ -108,31 +107,31 @@ postShareButtonClick = $(function (){
         }
         e.preventDefault();
     }
-
+    
     function openIcons(){
         buttonWrapper.addClass("active");
         button.addClass("hidden");
         buttonWrapper.animate({width: "286"}, 500);
         icons.animate({left: "0"}, 500);
     }
-
+    
     function closeIcons(){
         buttonWrapper.removeClass("active");
       button.removeClass("hidden");
         icons.animate({left: "-286"}, 0);
         buttonWrapper.animate({width: "178"}, 0);
     }
-
+    
     init();
 });
 
 
-/* FULL SCREEN BUTTON */
+/* FULL SCREEN BUTTON */ 
 (function() {
 
 /**
  * Sets or gets the fullscreen state.
- *
+ * 
  * @param {boolean=} state
  *            True to enable fullscreen mode, false to disable it. If not
  *            specified then the current fullscreen state is returned.
@@ -140,23 +139,23 @@ postShareButtonClick = $(function (){
  *            When querying the fullscreen state then the current fullscreen
  *            element (or true if browser doesn't support it) is returned
  *            when browser is currently in full screen mode. False is returned
- *            if browser is not in full screen mode. Null is returned if
- *            browser doesn't support fullscreen mode at all. When setting
- *            the fullscreen state then the current jQuery selection is
+ *            if browser is not in full screen mode. Null is returned if 
+ *            browser doesn't support fullscreen mode at all. When setting 
+ *            the fullscreen state then the current jQuery selection is 
  *            returned for chaining.
  * @this {jQuery}
  */
 function fullScreen(state)
 {
     var e, func, doc;
-
+    
     // Do nothing when nothing was selected
     if (!this.length) return this;
-
+    
     // We only use the first selected element because it doesn't make sense
     // to fullscreen multiple elements.
     e = (/** @type {Element} */ this[0]);
-
+    
     // Find the real element and the document (Depends on whether the
     // document itself or a HTML element was selected)
     if (e.ownerDocument)
@@ -168,7 +167,7 @@ function fullScreen(state)
         doc = e;
         e = doc.documentElement;
     }
-
+    
     // When no state was specified then return the current state.
     if (state == null)
     {
@@ -181,14 +180,14 @@ function fullScreen(state)
         {
             return null;
         }
-
+        
         // Check fullscreen state
         state = !!doc["fullscreenElement"]
             || !!doc["msFullscreenElement"]
             || !!doc["webkitIsFullScreen"]
             || !!doc["mozFullScreen"];
         if (!state) return state;
-
+        
         // Return current fullscreen element or "true" if browser doesn't
         // support this
         return (/** @type {?Element} */ doc["fullscreenElement"])
@@ -198,7 +197,7 @@ function fullScreen(state)
             || (/** @type {?Element} */ doc["mozFullScreenElement"])
             || state;
     }
-
+    
     // When state was specified then enter or exit fullscreen mode.
     if (state)
     {
@@ -208,7 +207,7 @@ function fullScreen(state)
             || (/** @type {?Function} */ e["webkitRequestFullScreen"])
             || (/** @type {?Function} */ e["msRequestFullscreen"])
             || (/** @type {?Function} */ e["mozRequestFullScreen"]);
-        if (func)
+        if (func) 
         {
             func.call(e);
         }
@@ -229,14 +228,14 @@ function fullScreen(state)
 
 /**
  * Toggles the fullscreen mode.
- *
+ * 
  * @return {!jQuery}
  *            The jQuery selection for chaining.
  * @this {jQuery}
  */
 function toggleFullScreen()
 {
-    return (/** @type {!jQuery} */ fullScreen.call(this,
+    return (/** @type {!jQuery} */ fullScreen.call(this, 
         !fullScreen.call(this)));
 }
 
@@ -270,7 +269,7 @@ function fullScreenErrorHandler(event)
 function installFullScreenHandlers()
 {
     var e, change, error;
-
+    
     // Determine event name
     e = document;
     if (e["webkitCancelFullScreen"])
@@ -288,7 +287,7 @@ function installFullScreenHandlers()
         change = "mozfullscreenchange";
         error = "mozfullscreenerror";
     }
-    else
+    else 
     {
         change = "fullscreenchange";
         error = "fullscreenerror";
@@ -308,7 +307,7 @@ installFullScreenHandlers();
 $(".fullscreen").click(function () {
      $(document).toggleFullScreen();
 });
-
+ 
 
 $(document).on("fullscreenchange", function() {
     if ($(document).fullScreen()){

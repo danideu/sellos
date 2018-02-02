@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>Sellos Olimpiadas Barcelona 92'</title>
 
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
@@ -59,16 +60,16 @@
 		<!-- Fin Full Screen Button -->
 
 		<!-- Contenido seccion -->	
-		<div class="container fullheight">
-		   <div class="row fullheight">
-			<div class="col-sm-12 fullheight">
-
-				<div class="aros centered is-animated animated fadeIn">
-					<img src="img/uno/arosolimpicos.png" alt="Aros Olímpicos">
-				</div>
-				<div class="centered contenido">
+		<div class="container flex-parent">
+		   <div class="row">
+			<div class="col-sm-12 flex-child">
+				<div class="contenido">
 					<h1 class="text-center">Ressorgiment</h1>
 					<p class="text-center"><strong>Els Jocs Olímpics de Barcelona van celebrar-se entre el 25 de juliol i el 9 d'agost de 1992</strong>.  La designació com a ciutat organitzadora comportà una profunda transformació urbanística, social i la creació de nous equipaments. Aquest esforç es complementà amb una acurada imatge corporativa, sota la voluntat de presentar una ciutat moderna i actual.  I en aquest sentit, la <strong>filatèlia olímpica va tenir un gran paper</strong>. </p>
+				</div>
+
+				<div class="aros">
+					<img class="max-img" src="img/uno/arosolimpicos.png" alt="Aros Olímpicos">
 				</div>
 
 				<div class="cobi is-animated animated fadeInLeftBig">
@@ -319,7 +320,6 @@
 			</div>
 		</div>
 	</section>	
-
 
 	<!-- SECCION 5 --> 
 	<section class="section five fondo3">
@@ -1273,6 +1273,7 @@
 					</div>
 			</div>
 
+
 			<!-- Boton Scroll Down -->
 			<div class="scroll-down-wrap no-border">
 			  <a href="#" class="section-down-arrow ">
@@ -1435,20 +1436,408 @@
 			  </a>
 			</div>
 			<div>
-				<img class="absolute-center-left2 max-img imgmw320" src="img/cinco/8/sello1.png" alt="Sello Olímpico Robert Llimós i Oriol 1'">
+				<img class="previs-top-right max-img imgmw320" src="img/cinco/8/sello3.png" alt="Sello Olímpico Robert Llimós i Oriol 3'">
 			</div>
-
 			<div>
 				<img class="absolute-center-bottom1 max-img imgmw320" src="img/cinco/8/sello2.png" alt="Sello Olímpico Robert Llimós i Oriol 2'">
 			</div>
 
 			<div>
-				<img class="previs-top-right max-img imgmw320" src="img/cinco/8/sello3.png" alt="Sello Olímpico Robert Llimós i Oriol 3'">
+				<img class="absolute-center-left2 max-img imgmw320" src="img/cinco/8/sello1.png" alt="Sello Olímpico Robert Llimós i Oriol 1'">
+			</div>
+
+		</div>
+	</section>	
+
+		<!-- SECCION 20 --> 
+	<section class="section twenty fondo6">
+		<!-- Compartir botón -->
+		<div class="share-button">
+	        <a href="#">Compartir</a>
+	        <div class="icon-wrapper">
+	            <ul>
+	                <li><a target="_blank" href="https://twitter.com/share" data-url="{{ content.absolute_url }}"><i class="fa fa-twitter"></i></a></li>
+	                <li><a target="_blank" href="https://facebook.com/sharer/sharer.php?" data-url="{{ content.absolute_url }}"><i class="fa fa-facebook"></i></a></li>
+	                <li><a target="_blank" href="#" onclick="javascript:window.open('https://www.linkedin.com/shareArticle?mini=true&amp;url={{ content.absolute_url }}&amp;title=','popup','width=600,height=600');"><i class="fa fa-linkedin"></i></a></li>
+	                <li><a target="_blank" href="https://plus.google.com/share?url={{ content.absolute_url }}" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><i class="fa fa-google-plus"></i></a></li>
+	                <li><a href="mailto:info@silvertech.com"><i class="fa fa-link"></i></a></li>
+	                <li><a href="#" class="close-social-icons"><i class="fa fa-times"></i></a></li>
+	            </ul>
+	        </div>
+	    </div>
+	    <!-- Fin Compartir botón -->
+		
+		<!-- Full Screen Button -->
+		<div class="icon">
+		<a class="fullscreen" href="#!"><svg class="fs-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+
+		    <!-- Top Right -->
+		    <path class="tr arrow" d="M74.6 33.6l0-4.3L63.2 40.7c-1.1 1.1-2.8 1.1-3.8 0c-1.1-1.1-1.1-2.8 0-3.9l11.4-11.4h-4.3 c-1.5 0-2.7-1.2-2.7-2.7c0-1.5 1.2-2.7 2.7-2.7h10.9c1.5 0 2.7 1.2 2.7 2.7v10.9c0 1.5-1.2 2.7-2.7 2.7 C75.8 36.3 74.6 35.1 74.6 33.6z"/>
+
+		    <!-- Top Left -->
+		    <path class="tl arrow" d="M33.6 25.4h-4.3l11.4 11.4c1.1 1.1 1.1 2.8 0 3.8c-1.1 1.1-2.8 1.1-3.8 0L25.4 29.3v4.3 c0 1.5-1.2 2.7-2.7 2.7c-1.5 0-2.7-1.2-2.7-2.7V22.7c0-1.5 1.2-2.7 2.7-2.7l10.9 0c1.5 0 2.7 1.2 2.7 2.7 C36.3 24.2 35.1 25.4 33.6 25.4z"/>
+
+		    <!-- Bottom Left -->
+		    <path class="bl arrow" d="M25.4 66.4l0 4.3l11.4-11.4c1.1-1.1 2.8-1.1 3.8 0c1.1 1.1 1.1 2.8 0 3.9L29.3 74.6h4.3 c1.5 0 2.7 1.2 2.7 2.7c0 1.5-1.2 2.7-2.7 2.7H22.7c-1.5 0-2.7-1.2-2.7-2.7V66.4c0-1.5 1.2-2.7 2.7-2.7 C24.2 63.7 25.4 64.9 25.4 66.4z"/>
+
+		    <!-- Bottom Right -->
+		    <path class="br arrow" d="M66.4 74.6h4.3L59.3 63.2c-1.1-1.1-1.1-2.8 0-3.8c1.1-1.1 2.8-1.1 3.8 0l11.4 11.4v-4.3 c0-1.5 1.2-2.7 2.7-2.7c1.5 0 2.7 1.2 2.7 2.7v10.9c0 1.5-1.2 2.7-2.7 2.7l-10.9 0c-1.5 0-2.7-1.2-2.7-2.7 C63.7 75.8 64.9 74.6 66.4 74.6z"/>
+
+		    <!-- Outline -->
+		    <path class="outline" d="M94 5c0.5 0 1 0.5 1 1v88c0 0.5-0.5 1-1 1H6c-0.5 0-1-0.5-1-1V6c0-0.5 0.5-1 1-1H94 M94 0H6C2.7 0 0 2.7 0 6v88 c0 3.3 2.7 6 6 6h88c3.3 0 6-2.7 6-6V6C100 2.7 97.3 0 94 0L94 0z"/>
+		  </svg>
+		</a>
+		</div>
+		<!-- Fin Full Screen Button -->
+
+		<!-- Contenido -->
+	 	<div class="container flex-parent">
+		   	<div class="row">
+		   		<div class="col-sm-12 flex-child">
+		   			<div class="titulodesc">
+ 						<h1 class="text-center">Les emissions filatèliques olímpiques</h1>
+ 						<p class="text-center">L'embranzida de les emissions preolímpiques culminà amb la <strong>presentació de les sèries olímpiques</strong>, durant el juliol de 1992.</p>
+ 					</div>
+		   		</div>
+
+				<div class="col-sm-12 flex-child">
+					<div class="contenido pt20">
+							<img class="img-responsive" src="img/seis/1/sello1.png" alt="Olymphilex Stamp">
+					</div>
+				</div>
+			</div>
+
+			<!-- Boton Scroll Down -->
+			<div class="scroll-down-wrap no-border">
+			  <a href="#" class="section-down-arrow ">
+			    <svg class="nectar-scroll-icon" viewBox="0 0 30 45" enable-background="new 0 0 30 45">
+			      <path class="nectar-scroll-icon-path" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" d="M15,1.118c12.352,0,13.967,12.88,13.967,12.88v18.76  c0,0-1.514,11.204-13.967,11.204S0.931,32.966,0.931,32.966V14.05C0.931,14.05,2.648,1.118,15,1.118z">
+			      </path>
+			    </svg>
+			  </a>
+			</div>
+
+			<div>
+				<img class="absolute-center-right5 max-img imgmw320" src="img/seis/1/sello2.png" alt="Sello Olímpico Robert Llimós i Oriol 1'">
+			</div>
+		</div>
+	</section>
+
+
+	<!-- SECCION 21 --> 
+	<section class="section tewntyone fondo6">
+		<!-- Compartir botón -->
+		<div class="share-button">
+	        <a href="#">Compartir</a>
+	        <div class="icon-wrapper">
+	            <ul>
+	                <li><a target="_blank" href="https://twitter.com/share" data-url="{{ content.absolute_url }}"><i class="fa fa-twitter"></i></a></li>
+	                <li><a target="_blank" href="https://facebook.com/sharer/sharer.php?" data-url="{{ content.absolute_url }}"><i class="fa fa-facebook"></i></a></li>
+	                <li><a target="_blank" href="#" onclick="javascript:window.open('https://www.linkedin.com/shareArticle?mini=true&amp;url={{ content.absolute_url }}&amp;title=','popup','width=600,height=600');"><i class="fa fa-linkedin"></i></a></li>
+	                <li><a target="_blank" href="https://plus.google.com/share?url={{ content.absolute_url }}" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><i class="fa fa-google-plus"></i></a></li>
+	                <li><a href="mailto:info@silvertech.com"><i class="fa fa-link"></i></a></li>
+	                <li><a href="#" class="close-social-icons"><i class="fa fa-times"></i></a></li>
+	            </ul>
+	        </div>
+	    </div>
+	    <!-- Fin Compartir botón -->
+		
+		<!-- Full Screen Button -->
+		<div class="icon">
+		<a class="fullscreen" href="#!"><svg class="fs-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+
+		    <!-- Top Right -->
+		    <path class="tr arrow" d="M74.6 33.6l0-4.3L63.2 40.7c-1.1 1.1-2.8 1.1-3.8 0c-1.1-1.1-1.1-2.8 0-3.9l11.4-11.4h-4.3 c-1.5 0-2.7-1.2-2.7-2.7c0-1.5 1.2-2.7 2.7-2.7h10.9c1.5 0 2.7 1.2 2.7 2.7v10.9c0 1.5-1.2 2.7-2.7 2.7 C75.8 36.3 74.6 35.1 74.6 33.6z"/>
+
+		    <!-- Top Left -->
+		    <path class="tl arrow" d="M33.6 25.4h-4.3l11.4 11.4c1.1 1.1 1.1 2.8 0 3.8c-1.1 1.1-2.8 1.1-3.8 0L25.4 29.3v4.3 c0 1.5-1.2 2.7-2.7 2.7c-1.5 0-2.7-1.2-2.7-2.7V22.7c0-1.5 1.2-2.7 2.7-2.7l10.9 0c1.5 0 2.7 1.2 2.7 2.7 C36.3 24.2 35.1 25.4 33.6 25.4z"/>
+
+		    <!-- Bottom Left -->
+		    <path class="bl arrow" d="M25.4 66.4l0 4.3l11.4-11.4c1.1-1.1 2.8-1.1 3.8 0c1.1 1.1 1.1 2.8 0 3.9L29.3 74.6h4.3 c1.5 0 2.7 1.2 2.7 2.7c0 1.5-1.2 2.7-2.7 2.7H22.7c-1.5 0-2.7-1.2-2.7-2.7V66.4c0-1.5 1.2-2.7 2.7-2.7 C24.2 63.7 25.4 64.9 25.4 66.4z"/>
+
+		    <!-- Bottom Right -->
+		    <path class="br arrow" d="M66.4 74.6h4.3L59.3 63.2c-1.1-1.1-1.1-2.8 0-3.8c1.1-1.1 2.8-1.1 3.8 0l11.4 11.4v-4.3 c0-1.5 1.2-2.7 2.7-2.7c1.5 0 2.7 1.2 2.7 2.7v10.9c0 1.5-1.2 2.7-2.7 2.7l-10.9 0c-1.5 0-2.7-1.2-2.7-2.7 C63.7 75.8 64.9 74.6 66.4 74.6z"/>
+
+		    <!-- Outline -->
+		    <path class="outline" d="M94 5c0.5 0 1 0.5 1 1v88c0 0.5-0.5 1-1 1H6c-0.5 0-1-0.5-1-1V6c0-0.5 0.5-1 1-1H94 M94 0H6C2.7 0 0 2.7 0 6v88 c0 3.3 2.7 6 6 6h88c3.3 0 6-2.7 6-6V6C100 2.7 97.3 0 94 0L94 0z"/>
+		  </svg>
+		</a>
+		</div>
+		<!-- Fin Full Screen Button -->
+
+		<!-- Contenido -->
+	 	<div class="container">
+		   	<div class="row">
+				<div class="col-sm-8 col-sm-offset-2">
+					<div>
+						<h1 class="text-center pt40 pb10">Sèrie olímpica de Barcelona '92</h1> 
+						<p class="text-center pt20">El disseny dels tres primers segells identificà els tres <strong>elements clau dels Jocs: Cobi</strong> -disseny de Xavier Mariscal-, <strong>la torxa olímpica</strong> -disseny  d'Agustí Puig- i <strong>"Victòria"</strong> -disseny de Norberto Thomas-.</p>
+					</div>
+			</div>
+
+			<!-- Boton Scroll Down -->
+			<div class="scroll-down-wrap no-border">
+			  <a href="#" class="section-down-arrow ">
+			    <svg class="nectar-scroll-icon" viewBox="0 0 30 45" enable-background="new 0 0 30 45">
+			      <path class="nectar-scroll-icon-path" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" d="M15,1.118c12.352,0,13.967,12.88,13.967,12.88v18.76  c0,0-1.514,11.204-13.967,11.204S0.931,32.966,0.931,32.966V14.05C0.931,14.05,2.648,1.118,15,1.118z">
+			      </path>
+			    </svg>
+			  </a>
+			</div>
+			<div>
+				<img class="absolute-center-left3 max-img imgmw320" src="img/seis/2/sello1.png" alt="Sello Olímpico Robert Llimós i Oriol 1'">
+			</div>
+
+			<div>
+				<img class="previs-bottom-center max-img imgmw320" src="img/seis/2/sello2.png" alt="Sello Olímpico Robert Llimós i Oriol 2'">
+			</div>
+
+			<div>
+				<img class="absolute-center-right4 max-img imgmw320" src="img/seis/2/sello3.png" alt="Sello Olímpico Robert Llimós i Oriol 3'">
 			</div>
 
 
 		</div>
 	</section>	
+
+
+	<!-- SECCION 22 --> 
+	<section class="section tewntytwo fondo6">
+		<!-- Compartir botón -->
+		<div class="share-button">
+	        <a href="#">Compartir</a>
+	        <div class="icon-wrapper">
+	            <ul>
+	                <li><a target="_blank" href="https://twitter.com/share" data-url="{{ content.absolute_url }}"><i class="fa fa-twitter"></i></a></li>
+	                <li><a target="_blank" href="https://facebook.com/sharer/sharer.php?" data-url="{{ content.absolute_url }}"><i class="fa fa-facebook"></i></a></li>
+	                <li><a target="_blank" href="#" onclick="javascript:window.open('https://www.linkedin.com/shareArticle?mini=true&amp;url={{ content.absolute_url }}&amp;title=','popup','width=600,height=600');"><i class="fa fa-linkedin"></i></a></li>
+	                <li><a target="_blank" href="https://plus.google.com/share?url={{ content.absolute_url }}" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><i class="fa fa-google-plus"></i></a></li>
+	                <li><a href="mailto:info@silvertech.com"><i class="fa fa-link"></i></a></li>
+	                <li><a href="#" class="close-social-icons"><i class="fa fa-times"></i></a></li>
+	            </ul>
+	        </div>
+	    </div>
+	    <!-- Fin Compartir botón -->
+		
+		<!-- Full Screen Button -->
+		<div class="icon">
+		<a class="fullscreen" href="#!"><svg class="fs-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+
+		    <!-- Top Right -->
+		    <path class="tr arrow" d="M74.6 33.6l0-4.3L63.2 40.7c-1.1 1.1-2.8 1.1-3.8 0c-1.1-1.1-1.1-2.8 0-3.9l11.4-11.4h-4.3 c-1.5 0-2.7-1.2-2.7-2.7c0-1.5 1.2-2.7 2.7-2.7h10.9c1.5 0 2.7 1.2 2.7 2.7v10.9c0 1.5-1.2 2.7-2.7 2.7 C75.8 36.3 74.6 35.1 74.6 33.6z"/>
+
+		    <!-- Top Left -->
+		    <path class="tl arrow" d="M33.6 25.4h-4.3l11.4 11.4c1.1 1.1 1.1 2.8 0 3.8c-1.1 1.1-2.8 1.1-3.8 0L25.4 29.3v4.3 c0 1.5-1.2 2.7-2.7 2.7c-1.5 0-2.7-1.2-2.7-2.7V22.7c0-1.5 1.2-2.7 2.7-2.7l10.9 0c1.5 0 2.7 1.2 2.7 2.7 C36.3 24.2 35.1 25.4 33.6 25.4z"/>
+
+		    <!-- Bottom Left -->
+		    <path class="bl arrow" d="M25.4 66.4l0 4.3l11.4-11.4c1.1-1.1 2.8-1.1 3.8 0c1.1 1.1 1.1 2.8 0 3.9L29.3 74.6h4.3 c1.5 0 2.7 1.2 2.7 2.7c0 1.5-1.2 2.7-2.7 2.7H22.7c-1.5 0-2.7-1.2-2.7-2.7V66.4c0-1.5 1.2-2.7 2.7-2.7 C24.2 63.7 25.4 64.9 25.4 66.4z"/>
+
+		    <!-- Bottom Right -->
+		    <path class="br arrow" d="M66.4 74.6h4.3L59.3 63.2c-1.1-1.1-1.1-2.8 0-3.8c1.1-1.1 2.8-1.1 3.8 0l11.4 11.4v-4.3 c0-1.5 1.2-2.7 2.7-2.7c1.5 0 2.7 1.2 2.7 2.7v10.9c0 1.5-1.2 2.7-2.7 2.7l-10.9 0c-1.5 0-2.7-1.2-2.7-2.7 C63.7 75.8 64.9 74.6 66.4 74.6z"/>
+
+		    <!-- Outline -->
+		    <path class="outline" d="M94 5c0.5 0 1 0.5 1 1v88c0 0.5-0.5 1-1 1H6c-0.5 0-1-0.5-1-1V6c0-0.5 0.5-1 1-1H94 M94 0H6C2.7 0 0 2.7 0 6v88 c0 3.3 2.7 6 6 6h88c3.3 0 6-2.7 6-6V6C100 2.7 97.3 0 94 0L94 0z"/>
+		  </svg>
+		</a>
+		</div>
+		<!-- Fin Full Screen Button -->
+
+		<!-- Contenido -->
+	 	<div class="container">
+		   	<div class="row">
+				<div class="col-sm-8 col-sm-offset-2">
+					<div>
+						<h1 class="text-center pt40 pb10">Sèrie olímpica de Barcelona '92</h1> 
+						<p class="text-center pt20">Dissenyadors: <strong>Pilar Villuendas, Josep R. Gómez</strong>. Espais representats: Estadi Olímpic, Palau Sant Jordi i INEFC.</p>
+					</div>
+			</div>
+
+			<!-- Boton Scroll Down -->
+			<div class="scroll-down-wrap no-border">
+			  <a href="#" class="section-down-arrow ">
+			    <svg class="nectar-scroll-icon" viewBox="0 0 30 45" enable-background="new 0 0 30 45">
+			      <path class="nectar-scroll-icon-path" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" d="M15,1.118c12.352,0,13.967,12.88,13.967,12.88v18.76  c0,0-1.514,11.204-13.967,11.204S0.931,32.966,0.931,32.966V14.05C0.931,14.05,2.648,1.118,15,1.118z">
+			      </path>
+			    </svg>
+			  </a>
+			</div>
+			<div>
+				<img class="previs-top-left1 max-img imgmw320" src="img/seis/3/sello1.png" alt="Sello Olímpico Robert Llimós i Oriol 1'">
+			</div>
+
+			<div>
+				<img class="absolute-center-up max-img imgmw320" src="img/seis/3/sello2.png" alt="Sello Olímpico Robert Llimós i Oriol 2'">
+			</div>
+
+			<div>
+				<img class="previs-top-right2 max-img imgmw320" src="img/seis/3/sello3.png" alt="Sello Olímpico Robert Llimós i Oriol 3'">
+			</div>
+
+
+		</div>
+	</section>	
+
+	
+	<!-- SECCION 23 --> 
+	<section class="section tewntythree fondo7">
+		<!-- Compartir botón -->
+		<div class="share-button">
+	        <a href="#">Compartir</a>
+	        <div class="icon-wrapper">
+	            <ul>
+	                <li><a target="_blank" href="https://twitter.com/share" data-url="{{ content.absolute_url }}"><i class="fa fa-twitter"></i></a></li>
+	                <li><a target="_blank" href="https://facebook.com/sharer/sharer.php?" data-url="{{ content.absolute_url }}"><i class="fa fa-facebook"></i></a></li>
+	                <li><a target="_blank" href="#" onclick="javascript:window.open('https://www.linkedin.com/shareArticle?mini=true&amp;url={{ content.absolute_url }}&amp;title=','popup','width=600,height=600');"><i class="fa fa-linkedin"></i></a></li>
+	                <li><a target="_blank" href="https://plus.google.com/share?url={{ content.absolute_url }}" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><i class="fa fa-google-plus"></i></a></li>
+	                <li><a href="mailto:info@silvertech.com"><i class="fa fa-link"></i></a></li>
+	                <li><a href="#" class="close-social-icons"><i class="fa fa-times"></i></a></li>
+	            </ul>
+	        </div>
+	    </div>
+	    <!-- Fin Compartir botón -->
+		
+		<!-- Full Screen Button -->
+		<div class="icon">
+		<a class="fullscreen" href="#!"><svg class="fs-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+
+		    <!-- Top Right -->
+		    <path class="tr arrow" d="M74.6 33.6l0-4.3L63.2 40.7c-1.1 1.1-2.8 1.1-3.8 0c-1.1-1.1-1.1-2.8 0-3.9l11.4-11.4h-4.3 c-1.5 0-2.7-1.2-2.7-2.7c0-1.5 1.2-2.7 2.7-2.7h10.9c1.5 0 2.7 1.2 2.7 2.7v10.9c0 1.5-1.2 2.7-2.7 2.7 C75.8 36.3 74.6 35.1 74.6 33.6z"/>
+
+		    <!-- Top Left -->
+		    <path class="tl arrow" d="M33.6 25.4h-4.3l11.4 11.4c1.1 1.1 1.1 2.8 0 3.8c-1.1 1.1-2.8 1.1-3.8 0L25.4 29.3v4.3 c0 1.5-1.2 2.7-2.7 2.7c-1.5 0-2.7-1.2-2.7-2.7V22.7c0-1.5 1.2-2.7 2.7-2.7l10.9 0c1.5 0 2.7 1.2 2.7 2.7 C36.3 24.2 35.1 25.4 33.6 25.4z"/>
+
+		    <!-- Bottom Left -->
+		    <path class="bl arrow" d="M25.4 66.4l0 4.3l11.4-11.4c1.1-1.1 2.8-1.1 3.8 0c1.1 1.1 1.1 2.8 0 3.9L29.3 74.6h4.3 c1.5 0 2.7 1.2 2.7 2.7c0 1.5-1.2 2.7-2.7 2.7H22.7c-1.5 0-2.7-1.2-2.7-2.7V66.4c0-1.5 1.2-2.7 2.7-2.7 C24.2 63.7 25.4 64.9 25.4 66.4z"/>
+
+		    <!-- Bottom Right -->
+		    <path class="br arrow" d="M66.4 74.6h4.3L59.3 63.2c-1.1-1.1-1.1-2.8 0-3.8c1.1-1.1 2.8-1.1 3.8 0l11.4 11.4v-4.3 c0-1.5 1.2-2.7 2.7-2.7c1.5 0 2.7 1.2 2.7 2.7v10.9c0 1.5-1.2 2.7-2.7 2.7l-10.9 0c-1.5 0-2.7-1.2-2.7-2.7 C63.7 75.8 64.9 74.6 66.4 74.6z"/>
+
+		    <!-- Outline -->
+		    <path class="outline" d="M94 5c0.5 0 1 0.5 1 1v88c0 0.5-0.5 1-1 1H6c-0.5 0-1-0.5-1-1V6c0-0.5 0.5-1 1-1H94 M94 0H6C2.7 0 0 2.7 0 6v88 c0 3.3 2.7 6 6 6h88c3.3 0 6-2.7 6-6V6C100 2.7 97.3 0 94 0L94 0z"/>
+		  </svg>
+		</a>
+		</div>
+		<!-- Fin Full Screen Button -->
+
+		<!-- Contenido -->
+	 	<div class="container">
+		   	<div class="row">
+				<div class="col-sm-8 col-sm-offset-2">
+					<div>
+						<h1 class="text-center pt40 pb10">Barcelona ’92 arreu del món</h1> 
+						<p class="text-center pt20">Molts països del món <strong>van posar en circulació els seus segells</strong> olímpics...</p>
+					</div>
+			</div>
+
+			<!-- Boton Scroll Down -->
+			<div class="scroll-down-wrap no-border">
+			  <a href="#" class="section-down-arrow ">
+			    <svg class="nectar-scroll-icon" viewBox="0 0 30 45" enable-background="new 0 0 30 45">
+			      <path class="nectar-scroll-icon-path" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" d="M15,1.118c12.352,0,13.967,12.88,13.967,12.88v18.76  c0,0-1.514,11.204-13.967,11.204S0.931,32.966,0.931,32.966V14.05C0.931,14.05,2.648,1.118,15,1.118z">
+			      </path>
+			    </svg>
+			  </a>
+			</div>
+			<div>
+				<img class="absolute-center-up2 max-img imgmw320 rota25" src="img/siete/sello2.png" alt="Sello Olímpico Robert Llimós i Oriol 2'">
+			</div>
+
+			<div>
+				<img class="previs-top-left2 max-img rota3" src="img/siete/sello1.png" alt="Sello Olímpico Robert Llimós i Oriol 1'">
+			</div>
+
+			<div>
+				<img class="previs-top-right4 max-img rota3" src="img/siete/sello3.png" alt="Sello Olímpico Robert Llimós i Oriol 3'">
+			</div>
+
+			<div>
+				<img class="previs-bottom-left2 max-img imgmw-media rota3" src="img/siete/sello4.png" alt="Sello Olímpico Robert Llimós i Oriol 3'">
+			</div>
+
+			<div>
+				<img class="previs-bottom-right4 max-img imgmw-media" src="img/siete/sello5.png" alt="Sello Olímpico Robert Llimós i Oriol 3'">
+			</div>
+
+
+		</div>
+	</section>
+
+	<!-- SECCION 23 --> 
+	<section class="section tewntythree fondo8">
+		<!-- Compartir botón -->
+		<div class="share-button">
+	        <a href="#">Compartir</a>
+	        <div class="icon-wrapper">
+	            <ul>
+	                <li><a target="_blank" href="https://twitter.com/share" data-url="{{ content.absolute_url }}"><i class="fa fa-twitter"></i></a></li>
+	                <li><a target="_blank" href="https://facebook.com/sharer/sharer.php?" data-url="{{ content.absolute_url }}"><i class="fa fa-facebook"></i></a></li>
+	                <li><a target="_blank" href="#" onclick="javascript:window.open('https://www.linkedin.com/shareArticle?mini=true&amp;url={{ content.absolute_url }}&amp;title=','popup','width=600,height=600');"><i class="fa fa-linkedin"></i></a></li>
+	                <li><a target="_blank" href="https://plus.google.com/share?url={{ content.absolute_url }}" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><i class="fa fa-google-plus"></i></a></li>
+	                <li><a href="mailto:info@silvertech.com"><i class="fa fa-link"></i></a></li>
+	                <li><a href="#" class="close-social-icons"><i class="fa fa-times"></i></a></li>
+	            </ul>
+	        </div>
+	    </div>
+	    <!-- Fin Compartir botón -->
+		
+		<!-- Full Screen Button -->
+		<div class="icon">
+		<a class="fullscreen" href="#!"><svg class="fs-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+
+		    <!-- Top Right -->
+		    <path class="tr arrow" d="M74.6 33.6l0-4.3L63.2 40.7c-1.1 1.1-2.8 1.1-3.8 0c-1.1-1.1-1.1-2.8 0-3.9l11.4-11.4h-4.3 c-1.5 0-2.7-1.2-2.7-2.7c0-1.5 1.2-2.7 2.7-2.7h10.9c1.5 0 2.7 1.2 2.7 2.7v10.9c0 1.5-1.2 2.7-2.7 2.7 C75.8 36.3 74.6 35.1 74.6 33.6z"/>
+
+		    <!-- Top Left -->
+		    <path class="tl arrow" d="M33.6 25.4h-4.3l11.4 11.4c1.1 1.1 1.1 2.8 0 3.8c-1.1 1.1-2.8 1.1-3.8 0L25.4 29.3v4.3 c0 1.5-1.2 2.7-2.7 2.7c-1.5 0-2.7-1.2-2.7-2.7V22.7c0-1.5 1.2-2.7 2.7-2.7l10.9 0c1.5 0 2.7 1.2 2.7 2.7 C36.3 24.2 35.1 25.4 33.6 25.4z"/>
+
+		    <!-- Bottom Left -->
+		    <path class="bl arrow" d="M25.4 66.4l0 4.3l11.4-11.4c1.1-1.1 2.8-1.1 3.8 0c1.1 1.1 1.1 2.8 0 3.9L29.3 74.6h4.3 c1.5 0 2.7 1.2 2.7 2.7c0 1.5-1.2 2.7-2.7 2.7H22.7c-1.5 0-2.7-1.2-2.7-2.7V66.4c0-1.5 1.2-2.7 2.7-2.7 C24.2 63.7 25.4 64.9 25.4 66.4z"/>
+
+		    <!-- Bottom Right -->
+		    <path class="br arrow" d="M66.4 74.6h4.3L59.3 63.2c-1.1-1.1-1.1-2.8 0-3.8c1.1-1.1 2.8-1.1 3.8 0l11.4 11.4v-4.3 c0-1.5 1.2-2.7 2.7-2.7c1.5 0 2.7 1.2 2.7 2.7v10.9c0 1.5-1.2 2.7-2.7 2.7l-10.9 0c-1.5 0-2.7-1.2-2.7-2.7 C63.7 75.8 64.9 74.6 66.4 74.6z"/>
+
+		    <!-- Outline -->
+		    <path class="outline" d="M94 5c0.5 0 1 0.5 1 1v88c0 0.5-0.5 1-1 1H6c-0.5 0-1-0.5-1-1V6c0-0.5 0.5-1 1-1H94 M94 0H6C2.7 0 0 2.7 0 6v88 c0 3.3 2.7 6 6 6h88c3.3 0 6-2.7 6-6V6C100 2.7 97.3 0 94 0L94 0z"/>
+		  </svg>
+		</a>
+		</div>
+		<!-- Fin Full Screen Button -->
+
+		<!-- Contenido -->
+	 	<div class="container">
+		   	<div class="row">
+				<div class="col-sm-8 col-sm-offset-2">
+					<div>
+						<h1 class="text-center pb10">L’emprempta</h1> 
+						<p class="text-center pt20">Els segells emesos durant els Jocs Olímpics de Barcelona <strong>van posar  el seu gra de sorra en la projecció mundial d'una ciutat moderna i actual.</strong>  La majoria de les il·lustracions,en bona part encarregades a artistes  i dissenyadors gràfics catalans, aposten per <strong>dissenys frescos i innovadors,  un fet poc habitual en la filatèlia del moment.</strong> </p>
+					</div>
+			</div>
+
+			<!-- Boton Scroll Down -->
+			<div class="scroll-down-wrap no-border">
+			  <a href="#" class="section-down-arrow ">
+			    <svg class="nectar-scroll-icon" viewBox="0 0 30 45" enable-background="new 0 0 30 45">
+			      <path class="nectar-scroll-icon-path" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" d="M15,1.118c12.352,0,13.967,12.88,13.967,12.88v18.76  c0,0-1.514,11.204-13.967,11.204S0.931,32.966,0.931,32.966V14.05C0.931,14.05,2.648,1.118,15,1.118z">
+			      </path>
+			    </svg>
+			  </a>
+			</div>
+			<div>
+				<img class="previs-top-left3 max-img imgmw320" src="img/ocho/sello1.png" alt="Sello Olímpico Robert Llimós i Oriol 1'">
+			</div>
+
+			<div>
+				<img class="previs-bottom-center max-img imgmw320" src="img/seis/2/sello2.png" alt="Sello Olímpico Robert Llimós i Oriol 2'">
+			</div>
+
+			<div>
+				<img class="absolute-center-right4 max-img imgmw320" src="img/seis/2/sello3.png" alt="Sello Olímpico Robert Llimós i Oriol 3'">
+			</div>
+
+
+		</div>
+	</section>	
+
 
 </div>
 
