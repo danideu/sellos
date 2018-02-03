@@ -35,8 +35,8 @@ section {
     height: 100%;
 }
 
-/* ********************************************************************************************************************/
-/* ********** Section 1 ***********************************************************************************************/
+/* ****************************************************************************************************************** */
+/* ********** Section 1 - ANIMATIONS ******************************************************************************** */
 
 section.first .cobi {
     position: absolute;
@@ -179,6 +179,118 @@ section.first .diapo.diapo_2 .claim.no-animate {
 section.first .diapo.diapo_2 .claim.animate {
     opacity: 1;
 }
+
+
+
+/* ****************************************************************************************************************** */
+/* ********** Section 2 - ANIMATIONS ******************************************************************************** */
+
+
+section.second .diapo.diapo_1 .titulodesc.no-animate {
+    opacity: 1;
+}
+
+section.second .diapo.diapo_1 .titulodesc.animate{
+    opacity: 0;
+}
+
+section.second .diapo.diapo_1 .img-esquina-r-t {
+    top: -70px;
+    padding-left: 450px;
+}
+section.second .diapo.diapo_1 .img-esquina-r-t img {
+    transform: rotate(0deg);
+}
+section.second .diapo.diapo_1 .img-esquina-r-t.no-animate {
+    transform: rotate(-18deg);
+    transition: .5s;
+
+}
+section.second .diapo.diapo_1 .img-esquina-r-t.animate {
+    top: 50%;
+    right: 50%;
+    transform: translateX(50%) translateY(-50%) rotate(0deg);
+    transition: .5s;
+}
+
+section.second .diapo.diapo_1 .img-esquina-l-b {
+    padding-right: 450px;
+}
+section.second .diapo.diapo_1 .img-esquina-l-b img {
+    transform: rotate(0deg);
+}
+
+section.second .diapo.diapo_1 .img-esquina-l-b.no-animate {
+    transform: rotate(13deg);
+    transition: .5s;
+}
+
+section.second .diapo.diapo_1 .img-esquina-l-b.animate {
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(50%) rotate(0deg);
+    transition: .5s;
+}
+
+section.second .diapo.diapo_1 .minidesc {
+    position: relative;
+    width: 100%;
+    margin-top: 5px;
+}
+
+section.second .diapo.diapo_1 .minidesc p {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 0px 0px 0px 20px;
+    font-size: inherit;
+}
+
+section.second .diapo.diapo_1 .minidesc.no-animate {
+    opacity: 0;
+}
+
+section.second .diapo.diapo_1 .minidesc.animate {
+    opacity: 1;
+}
+
+section.second .diapo.diapo_1.no-animate {
+    top: 0%;
+}
+
+section.second .diapo.diapo_1.animate,
+section.second .diapo.diapo_2.animate {
+    top: -100%;
+}
+
+section.second .diapo.diapo_2 .buzon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 6%;
+    transform: scale(1,1) translateX(-50%) translateY(-50%);
+    transition: .5s;
+    opacity: 0;
+}
+
+section.second .diapo.diapo_2 .buzon.animate {
+    transform: scale(5,5);
+    opacity: 1;
+}
+
+section.second .diapo.diapo_2 .sobre {
+    position: absolute;
+}
+section.second .diapo.diapo_2 .sobre.no-animate {
+    bottom: -160%;
+    right: -57%;
+
+    opacity: 0;
+}
+
+
+
 
 .scroll-down-wrap {
     position: fixed !important;

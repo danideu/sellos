@@ -78,10 +78,9 @@ function SCROLLCONTROL_executeMove (moveTo, forcedHash) {
            console.log("subiendo");
 
            var actualSection_itemToNoAnimate = jQuery(actualSection).find(".step.animate").length - 1;
-           console.log()
 
            if (actualSection_itemToNoAnimate >= 0) {
-               console.log("Elemento a animar:");
+               console.log("Elemento a DES-animar:");
                console.log(actualSection_itemToNoAnimate);
 
                console.log("Index del elemento a des-animar [" + actualSection_itemToNoAnimate + "]");
@@ -104,11 +103,6 @@ function SCROLLCONTROL_executeMove (moveTo, forcedHash) {
 
        case "down":
            console.log("Bajando");
-
-           var actualSection_itemToAnimate = jQuery(actualSection).find(".step.no-animate").get(0);
-
-           console.log("Elemento a animar:");
-           console.log(actualSection_itemToAnimate);
 
            var actualSection_itemToAnimate_index =  jQuery(actualSection).find(".step.animate").length;
 
@@ -176,7 +170,7 @@ function SCROLLCONTROL_animateItem (hashIndex, itemIndex, animationForced) {
                     SCROLLCONTROL_animateDo(jQuery("section.first .diapo.diapo_2 .text"), animationForced);
 
                     SCROLLCONTROL_animateUndo("section1-diapo2-sello", animationForced);
-                    break;
+                break;
 
                 case 5:
                     SCROLLCONTROL_animateDo("section1-diapo2-sello", animationForced);
@@ -193,7 +187,42 @@ function SCROLLCONTROL_animateItem (hashIndex, itemIndex, animationForced) {
         case 2:
             switch (itemIndex) {
                 case 0:
-                    SCROLLCONTROL_animateUndo(jQuery(".aros img.rings.ring_blue"), animationForced);
+                    SCROLLCONTROL_animateUndo(jQuery("section.second .diapo.diapo_1 .img-esquina-r-t"), animationForced);
+                    SCROLLCONTROL_animateUndo(jQuery("section.second .diapo.diapo_1 .img-esquina-l-b"), animationForced);
+                    SCROLLCONTROL_animateUndo(jQuery("section.second .diapo.diapo_1 .titulodesc"), animationForced);
+                break;
+
+                case 1:
+                    SCROLLCONTROL_animateDo(jQuery("section.second .diapo.diapo_1 .img-esquina-r-t"), animationForced);
+                    SCROLLCONTROL_animateDo(jQuery("section.second .diapo.diapo_1 .img-esquina-l-b"), animationForced);
+                    SCROLLCONTROL_animateDo(jQuery("section.second .diapo.diapo_1 .titulodesc"), animationForced);
+
+                    SCROLLCONTROL_animateUndo(jQuery("section.second .diapo.diapo_1 .minidesc"), animationForced);
+                break;
+
+                case 2:
+                    SCROLLCONTROL_animateDo(jQuery("section.second .diapo.diapo_1 .minidesc"), animationForced);
+
+                    SCROLLCONTROL_animateUndo(jQuery("section.second .diapo.diapo_1"), animationForced);
+                    SCROLLCONTROL_animateUndo(jQuery("section.second .diapo.diapo_2"), animationForced);
+
+                    SCROLLCONTROL_animateUndo(jQuery("section.second .diapo.diapo_2 .buzon"), animationForced);
+                    SCROLLCONTROL_animateUndo("section2-diapo2-sobre", animationForced);
+                break;
+
+                case 3:
+                    SCROLLCONTROL_animateDo(jQuery("section.second .diapo.diapo_1"), animationForced);
+                    SCROLLCONTROL_animateDo(jQuery("section.second .diapo.diapo_2"), animationForced);
+
+
+                    setTimeout(function () {
+                        SCROLLCONTROL_animateDo(jQuery("section.second .diapo.diapo_2 .buzon"), animationForced);
+                        SCROLLCONTROL_animateDo("section2-diapo2-sobre", animationForced);
+                    }, 500);
+                break;
+
+                case 4:
+
                 break;
             }
             break;
@@ -220,6 +249,24 @@ function SCROLLCONTROL_animateDo (elementReferer, animationForced) {
                 jQuery("section.first .diapo.diapo_2 .image").addClass("animate");
             } else {
                 jQuery("section.first .diapo.diapo_2 .image").switchClass("no-animate", "animate", 500, "easeInOutQuad");
+            }
+        break;
+
+        case "section2-diapo2-sobre":
+            var delayAnimation = 500;
+            if (animationForced === true) {
+                delayAnimation = 1;
+            }
+            jQuery('section.second .diapo.diapo_2 .sobre').animate({
+                bottom: ["60px", 'easeOutQuint'],
+                right: "25%",
+                opacity: 1
+            }, delayAnimation);
+            if (animationForced === true) {
+                jQuery("section.second .diapo.diapo_2 .sobre").removeClass("no-animate");
+                jQuery("section.second .diapo.diapo_2 .sobre").addClass("animate");
+            } else {
+                jQuery("section.second .diapo.diapo_2 .sobre").switchClass("no-animate", "animate", 500, "easeInOutQuad");
             }
         break;
 
@@ -252,6 +299,24 @@ function SCROLLCONTROL_animateUndo (elementReferer, animationForced) {
                 jQuery("section.first .diapo.diapo_2 .image").addClass("no-animate");
             } else {
                 jQuery("section.first .diapo.diapo_2 .image").switchClass("animate", "no-animate", 500, "easeInOutQuad");
+            }
+        break;
+
+        case "section2-diapo2-sobre":
+            var delayAnimation = 500;
+            if (animationForced === true) {
+                delayAnimation = 1;
+            }
+            jQuery('section.second .diapo.diapo_2 .sobre').animate({
+                bottom: ["-160%", 'easeInQuint'],
+                right: "-57%",
+                opacity: 0
+            }, delayAnimation);
+            if (animationForced === true) {
+                jQuery("section.second .diapo.diapo_2 .sobre").removeClass("animate");
+                jQuery("section.second .diapo.diapo_2 .sobre").addClass("no-animate");
+            } else {
+                jQuery("section.second .diapo.diapo_2 .sobre").switchClass("animate", "no-animate", 500, "easeInOutQuad");
             }
         break;
 
