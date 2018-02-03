@@ -276,7 +276,7 @@ function SCROLLCONTROL_moveSection (sectionNumber) {
 
     console.log();
 
-    var body = jQuery("html, body");
+    var body = jQuery("html");
     body.stop().animate({scrollTop:sectionTop}, 500, 'swing', function() {
         SCROLLCONTROL_beforeSection_activeAnimations(sectionNumber);
     });
