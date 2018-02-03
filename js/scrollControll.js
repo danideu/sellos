@@ -1,5 +1,4 @@
 
-var continueScrolling = true;
 var internalStep = 0;
 
 
@@ -35,11 +34,11 @@ jQuery(window).bind('hashchange', function() {
 
 
 function prev () {
-    SCROLLCONTROLL_executeMove("up");
+    SCROLLCONTROL_executeMove("up");
 }
 
 function next () {
-    SCROLLCONTROLL_executeMove("down");
+    SCROLLCONTROL_executeMove("down");
 }
 
 function left () {
@@ -54,13 +53,20 @@ function SCROLL_FULLPAGE_init () {
     jQuery("section").height(jQuery(window).height());
 }
 
-function SCROLLCONTROLL_executeMove (moveTo) {
+function SCROLLCONTROL_executeMove (moveTo) {
     var actualHash = parseInt(document.location.hash.replace("#", ""));
 
    switch(moveTo) {
        case "up":
-           if (internalStep - 1 >= 0) {
+           if ((internalStep - 1) >= 0) {
                internalStep = internalStep - 1;
+           } else {
+               if ((actualHash - 1) >= 0) {
+                   actualHash = (actualHash - 1);
+                   document.location.hash = actualHash;
+                   SCROLLCONTROL_moveSection(actualHash);
+                   internalStep = SCROLLCONTROL_section_getLastStep(actualHash);
+               }
            }
        break;
 
@@ -77,48 +83,68 @@ function SCROLLCONTROLL_executeMove (moveTo) {
         case 1:
             switch (internalStep) {
                 case 0:
-                    SCROLLCONTROLL_animateUndo(jQuery(".aros img.rings.ring_blue"));
-                    SCROLLCONTROLL_animateUndo(jQuery(".aros img.rings.ring_black"));
-                    SCROLLCONTROLL_animateUndo(jQuery(".aros img.rings.ring_red"));
-                    SCROLLCONTROLL_animateUndo(jQuery(".aros img.rings.ring_yellow"));
-                    SCROLLCONTROLL_animateUndo(jQuery(".aros img.rings.ring_green"));
+                    SCROLLCONTROL_animateUndo(jQuery(".aros img.rings.ring_blue"));
+                    SCROLLCONTROL_animateUndo(jQuery(".aros img.rings.ring_black"));
+                    SCROLLCONTROL_animateUndo(jQuery(".aros img.rings.ring_red"));
+                    SCROLLCONTROL_animateUndo(jQuery(".aros img.rings.ring_yellow"));
+                    SCROLLCONTROL_animateUndo(jQuery(".aros img.rings.ring_green"));
                 break;
                 case 1:
-                    SCROLLCONTROLL_animateDo(jQuery(".aros img.rings.ring_blue"));
-                    SCROLLCONTROLL_animateDo(jQuery(".aros img.rings.ring_black"));
-                    SCROLLCONTROLL_animateDo(jQuery(".aros img.rings.ring_red"));
-                    SCROLLCONTROLL_animateDo(jQuery(".aros img.rings.ring_yellow"));
-                    SCROLLCONTROLL_animateDo(jQuery(".aros img.rings.ring_green"));
+                    SCROLLCONTROL_animateDo(jQuery(".aros img.rings.ring_blue"));
+                    SCROLLCONTROL_animateDo(jQuery(".aros img.rings.ring_black"));
+                    SCROLLCONTROL_animateDo(jQuery(".aros img.rings.ring_red"));
+                    SCROLLCONTROL_animateDo(jQuery(".aros img.rings.ring_yellow"));
+                    SCROLLCONTROL_animateDo(jQuery(".aros img.rings.ring_green"));
 
-                    SCROLLCONTROLL_animateUndo(jQuery(".cobi"))
+                    SCROLLCONTROL_animateUndo(jQuery(".cobi"))
                 break;
                 case 2:
-                    SCROLLCONTROLL_animateDo(jQuery(".cobi"));
+                    SCROLLCONTROL_animateDo(jQuery(".cobi"));
 
-                    SCROLLCONTROLL_animateUndo(jQuery("section.first .diapo.diapo_1"));
-                    SCROLLCONTROLL_animateUndo(jQuery("section.first .diapo.diapo_2"));
+                    SCROLLCONTROL_animateUndo(jQuery("section.first .diapo.diapo_1"));
+                    SCROLLCONTROL_animateUndo(jQuery("section.first .diapo.diapo_2"));
                 break;
                 case 3:
-                    SCROLLCONTROLL_animateDo(jQuery("section.first .diapo.diapo_1"));
-                    SCROLLCONTROLL_animateDo(jQuery("section.first .diapo.diapo_2"));
+                    SCROLLCONTROL_animateDo(jQuery("section.first .diapo.diapo_1"));
+                    SCROLLCONTROL_animateDo(jQuery("section.first .diapo.diapo_2"));
 
-                    SCROLLCONTROLL_animateUndo(jQuery("section.first .diapo.diapo_2 .text"));
+                    SCROLLCONTROL_animateUndo(jQuery("section.first .diapo.diapo_2 .text"));
                     break;
 
                 case 4:
-                    SCROLLCONTROLL_animateDo(jQuery("section.first .diapo.diapo_2 .text"));
+                    SCROLLCONTROL_animateDo(jQuery("section.first .diapo.diapo_2 .text"));
 
-                    SCROLLCONTROLL_animateUndo("section1-diapo2-sello");
+                    SCROLLCONTROL_animateUndo("section1-diapo2-sello");
                 break;
 
                 case 5:
-                    SCROLLCONTROLL_animateDo("section1-diapo2-sello");
+                    SCROLLCONTROL_animateDo("section1-diapo2-sello");
 
-                    SCROLLCONTROLL_animateUndo(jQuery("section.first .diapo.diapo_2 .claim"));
+                    SCROLLCONTROL_animateUndo(jQuery("section.first .diapo.diapo_2 .claim"));
                 break;
 
                 case 6:
-                    SCROLLCONTROLL_animateDo(jQuery("section.first .diapo.diapo_2 .claim"));
+                    SCROLLCONTROL_moveSection(actualHash);
+
+                    SCROLLCONTROL_animateDo(jQuery("section.first .diapo.diapo_2 .claim"));
+                break;
+
+                case 7:
+                    window.location.hash = parseInt(actualHash) + 1;
+
+                    internalStep = -1;
+
+                    actualHash = parseInt(document.location.hash.replace("#", ""));
+
+                    SCROLLCONTROL_moveSection(actualHash);
+                break;
+            }
+        break;
+
+        case 2:
+            switch (internalStep) {
+                case 0:
+                    SCROLLCONTROL_animateUndo(jQuery(".aros img.rings.ring_blue"));
                 break;
             }
         break;
@@ -127,7 +153,7 @@ function SCROLLCONTROLL_executeMove (moveTo) {
 }
 
 
-function SCROLLCONTROLL_animateDo (elementReferer) {
+function SCROLLCONTROL_animateDo (elementReferer) {
 
     switch(elementReferer) {
         case "section1-diapo2-sello":
@@ -145,7 +171,7 @@ function SCROLLCONTROLL_animateDo (elementReferer) {
 
 }
 
-function SCROLLCONTROLL_animateUndo (elementReferer) {
+function SCROLLCONTROL_animateUndo (elementReferer) {
     switch(elementReferer) {
         case "section1-diapo2-sello":
             jQuery('section.first .diapo.diapo_2 .image').animate({
@@ -159,4 +185,24 @@ function SCROLLCONTROLL_animateUndo (elementReferer) {
             jQuery(elementReferer).switchClass("animate", "no-animate", 500, "easeInOutQuad");
 
     }
+}
+
+function SCROLLCONTROL_moveSection (sectionNumber) {
+    var sectionToMove = jQuery("section").get(sectionNumber - 1);
+    var sectionTop = jQuery(sectionToMove).offset();
+    sectionTop = sectionTop.top;
+
+    var body = jQuery("html, body");
+        body.stop().animate({scrollTop:sectionTop}, 500, 'swing', function() {
+    });
+
+}
+
+function SCROLLCONTROL_section_getLastStep (sectionNumber) {
+    var sectionLastStep = 0;
+
+    var actualSectionContainer = jQuery("section").get(sectionNumber - 1);
+    sectionLastStep = jQuery(actualSectionContainer).find(".step").length;
+
+    return sectionLastStep;
 }
