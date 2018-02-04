@@ -37,6 +37,10 @@ section {
     height: 100%;
 }
 
+.position-relative {
+    position: relative;
+}
+
 /*
 
 .invisible {
@@ -360,6 +364,54 @@ section.third .diapo.diapo_1 .image_cobiSello.animated {
     right: -6%;
     opacity: 1;
 }
+
+
+/* ****************************************************************************************************************** */
+/* ********** Section 3 - ANIMATIONS ******************************************************************************** */
+
+section.fourth .diapo.diapo_1 .part1 {
+    position: relative;
+}
+
+section.fourth .diapo.diapo_1 .part1.no-animated {
+    top: 0px;
+    opacity: 1;
+}
+section.fourth .diapo.diapo_1 .part1.animated {
+    top: -100%;
+    opacity: 0;
+}
+
+section.fourth .diapo.diapo_1 .part2 {
+    position: absolute;
+}
+
+
+section.fourth .diapo.diapo_1 .part2 .text-left {
+    opacity: 0;
+}
+
+section.fourth .diapo.diapo_1 .part2.no-animated {
+    top: 100%;
+    margin-top: -60px;
+}
+
+section.fourth .diapo.diapo_1 .part2.animated {
+    top: 35%;
+}
+
+section.fourth .diapo.diapo_1 .part2.animated .text-left {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
 
 .scroll-down-wrap {
     position: fixed !important;
