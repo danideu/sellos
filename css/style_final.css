@@ -367,7 +367,7 @@ section.third .diapo.diapo_1 .image_cobiSello.animated {
 
 
 /* ****************************************************************************************************************** */
-/* ********** Section 3 - ANIMATIONS ******************************************************************************** */
+/* ********** Section 4 - ANIMATIONS ******************************************************************************** */
 
 section.fourth .diapo.diapo_1 .part1 {
     position: relative;
@@ -405,7 +405,33 @@ section.fourth .diapo.diapo_1 .part2.animated .text-left {
 }
 
 
+/* ****************************************************************************************************************** */
+/* ********** Section 5 - ANIMATIONS ******************************************************************************** */
 
+section.five .diapo.diapo_1 .image1,
+section.five .diapo.diapo_1 .image2 {
+    position: relative;
+}
+
+section.five .diapo.diapo_1 .image1.no-animated {
+    left: -100%;
+    opacity: 0;
+}
+
+section.five .diapo.diapo_1 .image1.animated {
+    left: 0%;
+    opacity: 1;
+}
+
+section.five .diapo.diapo_1 .image2.no-animated {
+    right: -100%;
+    opacity: 0;
+}
+
+section.five .diapo.diapo_1 .image2.animated {
+    right: 0%;
+    opacity: 1;
+}
 
 
 

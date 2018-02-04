@@ -278,6 +278,38 @@ function SCROLLCONTROL_animateItem (hashIndex, itemIndex, animationForced) {
             }
         break;
 
+        case 4:
+            switch (itemIndex) {
+                case 0:
+                    SCROLLCONTROL_animateUndo(jQuery("section.fourth .diapo.diapo_1 .part2"), animationForced);
+                    setTimeout(function () {
+                        SCROLLCONTROL_animateUndo(jQuery("section.fourth .diapo.diapo_1 .part1"), animationForced);
+                    }, 300);
+                    break;
+
+                case 1:
+                    SCROLLCONTROL_animateDo(jQuery("section.fourth .diapo.diapo_1 .part1"), animationForced);
+                    setTimeout(function () {
+                        SCROLLCONTROL_animateDo(jQuery("section.fourth .diapo.diapo_1 .part2"), animationForced);
+                    }, 200);
+                break;
+            }
+        break;
+
+        case 5:
+            switch (itemIndex) {
+                case 0:
+                    SCROLLCONTROL_animateUndo(jQuery("section.five .diapo.diapo_1 .image1"), animationForced);
+                    SCROLLCONTROL_animateUndo(jQuery("section.five .diapo.diapo_1 .image2"), animationForced);
+                break;
+
+                case 1:
+                    SCROLLCONTROL_animateDo(jQuery("section.five .diapo.diapo_1 .image1"), animationForced);
+                    SCROLLCONTROL_animateDo(jQuery("section.five .diapo.diapo_1 .image2"), animationForced);
+                break;
+            }
+        break;
+
     }
 }
 
