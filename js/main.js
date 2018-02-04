@@ -20,6 +20,9 @@
 
     navigation: true,
     responsiveWidth: 415,
+    anchors: ['firstsection'],
+    //anchors: ['firstsection','presentacion','emisionspre','emisionsolim','arreudelmon','lemprempta'],
+    //menu: '#menu',
     onLeave: function(index, nextIndex, direction) {
     
       /**
