@@ -366,11 +366,36 @@ function SCROLLCONTROL_animateItem (hashIndex, itemIndex, animationForced) {
                 break;
 
                 case 5:
+                    jQuery("section.six .diapo").animate({
+                        top: "-200%"
+                    }, 500);
+
                     SCROLLCONTROL_animateDo(jQuery("section.six .diapo.diapo_3 .sello1"), animationForced);
                     SCROLLCONTROL_animateDo(jQuery("section.six .diapo.diapo_3 .sello2"), animationForced);
                     SCROLLCONTROL_animateDo(jQuery("section.six .diapo.diapo_3 .sello3"), animationForced);
                     SCROLLCONTROL_animateDo(jQuery("section.six .diapo.diapo_3 .sello4"), animationForced);
                 break;
+
+                case 6:
+
+                    SCROLLCONTROL_animateUndo(jQuery("section.six .diapo.diapo_4 .sello1"), animationForced);
+                    SCROLLCONTROL_animateUndo(jQuery("section.six .diapo.diapo_4 .sello2"), animationForced);
+                    SCROLLCONTROL_animateUndo(jQuery("section.six .diapo.diapo_4 .sello3"), animationForced);
+
+
+                    SCROLLCONTROL_animateDo(jQuery("section.six .diapo.diapo_4"), animationForced);
+
+                    jQuery("section.six .diapo").animate({
+                        top: "-300%"
+                    }, 500);
+                break;
+
+                case 7:
+                    SCROLLCONTROL_animateDo(jQuery("section.six .diapo.diapo_4 .sello1"), animationForced);
+                    SCROLLCONTROL_animateDo(jQuery("section.six .diapo.diapo_4 .sello2"), animationForced);
+                    SCROLLCONTROL_animateDo(jQuery("section.six .diapo.diapo_4 .sello3"), animationForced);
+                break;
+
             }
             break;
 

@@ -24,6 +24,7 @@ section {
     top: 0%;
     width: 100%;
     height:100%;
+    overflow: hidden;
 }
 .diapo .diapo_container {
     display: table;
@@ -550,6 +551,46 @@ section.six .diapo.diapo_3 .sello4.animated {
     position: relative;
     left: -35%;
     transform: rotate(0deg);
+}
+
+section.six .diapo.diapo_4 .sello1.no-animated {
+    position: absolute;
+    top: -5%;
+    right: 0%;
+}
+
+section.six .diapo.diapo_4 .sello1.animated {
+    position: absolute;
+    top: 35%;
+    margin-top: -100px;
+    right: 15%;
+}
+
+section.six .diapo.diapo_4 .sello2.no-animated {
+    position: absolute;
+    top: 50%;
+    margin-top: -100px;
+    left: 0%;
+}
+
+section.six .diapo.diapo_4 .sello2.animated {
+    position: absolute;
+    top: 35%;
+    margin-top: -100px;
+    left: 0%;
+}
+
+section.six .diapo.diapo_4 .sello3.no-animated {
+    position: absolute;
+    bottom: -5%;
+    left: 0%;
+}
+
+section.six .diapo.diapo_4 .sello3.animated {
+    position: absolute;
+    top: 35%;
+    margin-top: -100px;
+    left: 15%;
 }
 
 
