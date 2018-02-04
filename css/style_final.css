@@ -596,6 +596,48 @@ section.six .diapo.diapo_4 .sello3.animated {
 }
 
 
+section.six .diapo.diapo_5 .sello1.no-animated {
+    position: absolute;
+    top: -10%;
+    left: 12%;
+}
+
+section.six .diapo.diapo_5 .sello1.animated {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin-left: -166px;
+    transform: rotate(0deg);
+}
+
+section.six .diapo.diapo_5 .sello2.no-animated {
+    position: absolute;
+    left: -98px;
+}
+
+section.six .diapo.diapo_5 .sello2.animated {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-left: -166px;
+    transform: rotate(0deg);
+}
+
+section.six .diapo.diapo_5 .sello3.no-animated {
+    position: absolute;
+    right: 10%;
+    bottom: -77px;
+}
+
+section.six .diapo.diapo_5 .sello3.animated {
+    position: absolute;
+    left: 50%;
+    bottom: 16%;
+    margin-left: -166px;
+    transform: rotate(0deg);
+}
+
+
 
 
 
