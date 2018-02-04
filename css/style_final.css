@@ -852,6 +852,24 @@ section.seven .diapo.diapo_1 .element4.animated {
 }
 
 
+section.seven .diapo.diapo_2 .sello1.animated {
+    top: 48%;
+    left: 50%;
+    margin-left: -500px;
+}
+
+section.seven .diapo.diapo_2 .sello2.animated {
+    top: 50%;
+    margin-top: -150px;
+}
+
+section.seven .diapo.diapo_2 .sello3.animated {
+    top: 48%;
+    right: 50%;
+    margin-right: -500px;
+}
+
+
 
 
 .scroll-down-wrap {
