@@ -870,6 +870,22 @@ section.seven .diapo.diapo_2 .sello3.animated {
 }
 
 
+section.seven .diapo.diapo_3 .sello1.animated {
+    top: 50%;
+    margin-top: -150px;
+}
+
+section.seven .diapo.diapo_3 .sello2.animated {
+    top: 50%;
+    margin-top: -80px;
+}
+
+section.seven .diapo.diapo_3 .sello3.animated {
+    top: 50%;
+    margin-top: -20px;
+}
+
+
 
 
 .scroll-down-wrap {
