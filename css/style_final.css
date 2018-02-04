@@ -638,6 +638,60 @@ section.six .diapo.diapo_5 .sello3.animated {
 }
 
 
+section.six .diapo.diapo_6 .sello1.no-animated {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: -220px;
+}
+
+section.six .diapo.diapo_6 .sello1.animated {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 240px;
+}
+
+section.six .diapo.diapo_6 .sello2 {
+    bottom: auto !important;
+}
+
+section.six .diapo.diapo_6 .sello2.no-animated {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 240px;
+}
+
+section.six .diapo.diapo_6 .sello2.animated {
+    position: absolute;
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+    margin-top: -220px;
+}
+
+section.six .diapo.diapo_6 .sello3 {
+    bottom: auto !important;
+}
+
+section.six .diapo.diapo_6 .sello3.no-animated {
+    position: absolute;
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+    margin-top: 240px;
+}
+
+section.six .diapo.diapo_6 .sello3.animated {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: -220px;
+}
+
+
+
 
 
 
