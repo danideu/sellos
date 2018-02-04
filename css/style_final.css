@@ -887,6 +887,59 @@ section.seven .diapo.diapo_3 .sello3.animated {
 
 
 
+/* ****************************************************************************************************************** */
+/* ********** Section 8 - ANIMATIONS ******************************************************************************** */
+
+section.eight .diapo.diapo_1 .element1.animated {
+    left: 50%;
+    margin-left: 30%;
+    top: 50%;
+    margin-top: -300px;
+    transform: rotate(1deg);
+}
+
+section.eight .diapo.diapo_1 .element2.animated {
+    top: 50%;
+    margin-top: -400px;
+    left: 50%;
+    margin-left: -39%;
+    z-index: 5;
+    transform: rotate(0deg);
+}
+
+section.eight .diapo.diapo_1 .element3.animated {
+    top: 50%;
+    right: auto;
+    left: 50%;
+    margin-left: -7%;
+    margin-top: -425px;
+    z-index: 4;
+    transform: rotate(0deg);
+}
+
+section.eight .diapo.diapo_1 .element4.animated {
+    top: 50%;
+    margin-top: 3%;
+    left: 50%;
+    margin-left: -36%;
+    transform: rotate(0deg);
+    z-index: 4;
+    bottom: auto;
+}
+
+section.eight .diapo.diapo_1 .element5.animated {
+    bottom: auto;
+    top: 50%;
+    right: auto;
+    margin-bottom: -32%;
+    left: 50%;
+    margin-left: -4%;
+    transform: rotate(0deg);
+    z-index: 4;
+}
+
+
+
 
 .scroll-down-wrap {
     position: fixed !important;
