@@ -54,7 +54,7 @@ function right () {
 
 }
 
-function SCROLL_FULLPAGE_init () {
+function    SCROLL_FULLPAGE_init () {
     jQuery("section").height(jQuery(window).height());
 }
 
@@ -264,7 +264,7 @@ function SCROLLCONTROL_animateDo (elementReferer, animationForced) {
                 delayAnimation = 1;
             }
             jQuery('section.first .diapo.diapo_2 .image').animate({
-                bottom: [-150, 'easeOutQuint'],
+                bottom: [-30, 'easeOutQuint'],
                 right: 0,
                 opacity: 1
             }, delayAnimation);
@@ -283,7 +283,7 @@ function SCROLLCONTROL_animateDo (elementReferer, animationForced) {
             }
             jQuery('section.second .diapo.diapo_2 .sobre').animate({
                 bottom: ["60px", 'easeOutQuint'],
-                right: "25%",
+                right: "29%",
                 opacity: 1
             }, delayAnimation);
             if (animationForced === true) {

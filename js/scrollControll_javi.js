@@ -54,8 +54,8 @@ function right () {
 
 }
 
-function    SCROLL_FULLPAGE_init () {
-    jQuery("section, .diapo").height(jQuery(window).height());
+function SCROLL_FULLPAGE_init () {
+//    jQuery("section").height(jQuery(window).height());
 }
 
 function SCROLLCONTROL_executeMove (moveTo, forcedHash) {
