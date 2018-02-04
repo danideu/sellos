@@ -12,6 +12,9 @@ body, html {
     position: fixed !important;
 }
 
+.row {
+    width: 100%;
+}
 section {
     position: relative;
 }
@@ -436,6 +439,13 @@ section.five .diapo.diapo_1 .image2.animated {
 /* ****************************************************************************************************************** */
 /* ********** Section 6 - ANIMATIONS ******************************************************************************** */
 
+section.six .diapo.diapo_1.animated,
+section.six .diapo.diapo_2.animated,
+section.six .diapo.diapo_3.animated,
+section.six .diapo.diapo_4.animated {
+    top: -100%;
+}
+
 section.six .diapo.diapo_1 .part1 {
     position: relative;
 }
@@ -464,6 +474,37 @@ section.six .diapo.diapo_1 .part2.no-animated {
     right: -73%;
 }
 
+section.six .diapo.diapo_2 .sello1.no-animated,
+section.six .diapo.diapo_2 .sello2.no-animated,
+section.six .diapo.diapo_2 .sello3.no-animated {
+    position: relative;
+    top: -200%;
+    left: 0px;
+    vertical-align: inherit;
+    opacity: 0;
+}
+
+section.six .diapo.diapo_2 .sello1.animated {
+    position: relative;
+    top: 0%;
+    left: 0px;
+    vertical-align: inherit;
+    opacity: 1;
+}
+
+section.six .diapo.diapo_2 .sello2.animated {
+    position: relative;
+    top: 0%;
+    vertical-align: inherit;
+    opacity: 1;
+}
+
+section.six .diapo.diapo_2 .sello3.animated {
+    position: relative;
+    top: 0%;
+    vertical-align: inherit;
+    opacity: 1;
+}
 
 
 
