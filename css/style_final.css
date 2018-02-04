@@ -433,6 +433,37 @@ section.five .diapo.diapo_1 .image2.animated {
     opacity: 1;
 }
 
+/* ****************************************************************************************************************** */
+/* ********** Section 6 - ANIMATIONS ******************************************************************************** */
+
+section.six .diapo.diapo_1 .part1 {
+    position: relative;
+}
+
+section.six .diapo.diapo_1 .part1.no-animated {
+    top: 0%;
+    opacity: 1;
+}
+
+section.six .diapo.diapo_1 .part1.animated {
+    top: -100%;
+    opacity: 0;
+}
+
+section.six .diapo.diapo_1 .part2 {
+    position: absolute;
+
+}
+
+section.six .diapo.diapo_1 .part2 .sello {
+    transform: rotate(5deg);
+}
+
+section.six .diapo.diapo_1 .part2.no-animated {
+    bottom: -17%;
+    right: -73%;
+}
+
 
 
 

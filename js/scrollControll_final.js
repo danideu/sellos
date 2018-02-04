@@ -310,6 +310,24 @@ function SCROLLCONTROL_animateItem (hashIndex, itemIndex, animationForced) {
             }
         break;
 
+        case 6:
+            switch (itemIndex) {
+                case 0:
+                    SCROLLCONTROL_animateUndo("section5-diapo1-part2", animationForced);
+                    setTimeout(function () {
+                        SCROLLCONTROL_animateUndo(jQuery("section.six .diapo.diapo_1 .part1"), animationForced);
+                    }, 500);
+                    break;
+
+                case 1:
+                    SCROLLCONTROL_animateDo(jQuery("section.six .diapo.diapo_1 .part1"), animationForced);
+                    setTimeout(function () {
+                        SCROLLCONTROL_animateDo("section5-diapo1-part2", animationForced);
+                    }, 500);
+                break;
+            }
+            break;
+
     }
 }
 
@@ -350,6 +368,23 @@ function SCROLLCONTROL_animateDo (elementReferer, animationForced) {
                 jQuery("section.second .diapo.diapo_2 .sobre").addClass("animated");
             } else {
                 jQuery("section.second .diapo.diapo_2 .sobre").switchClass("no-animated", "animated", 500, "easeInOutQuad");
+            }
+        break;
+
+        case "section5-diapo1-part2":
+            var delayAnimation = 500;
+            if (animationForced === true) {
+                delayAnimation = 1;
+            }
+            jQuery('section.six .diapo.diapo_1 .part2').animate({
+                bottom: ["35%", 'easeOutQuint'],
+                right: "0%",
+            }, delayAnimation);
+            if (animationForced === true) {
+                jQuery("section.six .diapo.diapo_1 .part2").removeClass("no-animated");
+                jQuery("section.six .diapo.diapo_1 .part2").addClass("animated");
+            } else {
+                jQuery("section.six .diapo.diapo_1 .part2").switchClass("no-animated", "animated", 500, "easeInOutQuad");
             }
         break;
 
@@ -400,6 +435,23 @@ function SCROLLCONTROL_animateUndo (elementReferer, animationForced) {
                 jQuery("section.second .diapo.diapo_2 .sobre").addClass("no-animated");
             } else {
                 jQuery("section.second .diapo.diapo_2 .sobre").switchClass("animated", "no-animated", 500, "easeInOutQuad");
+            }
+        break;
+
+        case "section5-diapo1-part2":
+            var delayAnimation = 500;
+            if (animationForced === true) {
+                delayAnimation = 1;
+            }
+            jQuery('section.six .diapo.diapo_1 .part2').animate({
+                bottom: ["-17%", 'easeInOutQuart'],
+                right: "-73%",
+            }, delayAnimation);
+            if (animationForced === true) {
+                jQuery("section.six .diapo.diapo_1 .part2").removeClass("animated");
+                jQuery("section.six .diapo.diapo_1 .part2").addClass("no-animated");
+            } else {
+                jQuery("section.six .diapo.diapo_1 .part2").switchClass("animated", "no-animated", 500, "easeInOutQuad");
             }
         break;
 
