@@ -763,7 +763,47 @@ section.six .diapo.diapo_8 .sello3.animated {
     z-index: 1;
 }
 
+section.six .diapo.diapo_9 .sello1 {
+    top: 50%;
+    right: 50%;
+    margin-top: -160px;
+    margin-right: -350px;
+}
+section.six .diapo.diapo_9 .sello1.animated {
+    top: 50%;
+    right: 50%;
+    margin-top: 140px;
+    margin-right: -350px;
+}
 
+section.six .diapo.diapo_9 .sello2 {
+    top: 50%;
+    right: 50%;
+    margin-top: -10px;
+    margin-right: -150px;
+}
+
+section.six .diapo.diapo_9 .sello2.animated {
+    top: 50%;
+    right: 50%;
+    margin-top: -320px;
+    margin-right: -150px;
+    z-index: 2;
+}
+
+section.six .diapo.diapo_9 .sello3 {
+    top: 50%;
+    left: 50%;
+    margin-top: -120px;
+    margin-left: -350px;
+}
+section.six .diapo.diapo_9 .sello3.animated {
+    top: 50%;
+    right: 50%;
+    margin-top: 140px;
+    margin-right: -350px;
+    z-index: 1;
+}
 
 
 
