@@ -3,9 +3,16 @@ jQuery(document).ready(function($) {
     SCROLL_FULLPAGE_init();
 
     setTimeout(function () {
-        if (document.location.hash.length > 0) {
-            var actualHash = parseInt(document.location.hash.replace("#", ""));
+        var actualHash = document.location.hash;
 
+        if (actualHash.length > 1) {
+            actualHash = parseInt(document.location.hash.replace("#", ""));
+        } else {
+            actualHash = 1;
+        }
+
+        if (actualHash === parseInt(actualHash, 10)) {
+            document.location.hash = actualHash;
             SCROLLCONTROL_moveSection(actualHash);
         } else {
             actualHash = 1;
