@@ -42,7 +42,7 @@ section.first .cobi {
     position: absolute;
 }
 
-section.first .cobi.no-animate {
+section.first .cobi.no-animated {
     left: -30%;
     opacity: 0;
 }
@@ -67,7 +67,7 @@ section.first .aros img.rings {
     opacity: 0;
 }
 
-section.first .aros img.rings.animate {
+section.first .aros img.rings.animated {
     opacity: 1;
 }
 
@@ -75,12 +75,12 @@ section.first .aros img.rings.ring_blue {
     z-index: 5;
 }
 
-section.first .aros img.rings.ring_blue.no-animate {
+section.first .aros img.rings.ring_blue.no-animated {
     top: -85%;
     left: -30%;
 }
 
-section.first .aros img.rings.ring_blue.animate {
+section.first .aros img.rings.ring_blue.animated {
     top: 5%;
     left: 0%;
 }
@@ -89,12 +89,12 @@ section.first .aros img.rings.ring_black {
     z-index: 3;
 }
 
-section.first .aros img.rings.ring_black.no-animate {
+section.first .aros img.rings.ring_black.no-animated {
     top: -85%;
     left: 32.5%;
 }
 
-section.first .aros img.rings.ring_black.animate {
+section.first .aros img.rings.ring_black.animated {
     top: 0%;
     left: 32.5%;
 }
@@ -103,12 +103,12 @@ section.first .aros img.rings.ring_red {
     z-index: 1;
 }
 
-section.first .aros img.rings.ring_red.no-animate {
+section.first .aros img.rings.ring_red.no-animated {
     top: -85%;
     right: -30%;
 }
 
-section.first .aros img.rings.ring_red.animate {
+section.first .aros img.rings.ring_red.animated {
     top: 5%;
     right: 0%;
 }
@@ -117,12 +117,12 @@ section.first .aros img.rings.ring_yellow {
     z-index: 4;
 }
 
-section.first .aros img.rings.ring_yellow.no-animate {
+section.first .aros img.rings.ring_yellow.no-animated {
     bottom: -80%;
     left: -46%;
 }
 
-section.first .aros img.rings.ring_yellow.animate {
+section.first .aros img.rings.ring_yellow.animated {
     bottom: 0%;
     left: 16%;
 }
@@ -131,33 +131,33 @@ section.first .aros img.rings.ring_green {
     z-index: 2;
 }
 
-section.first .aros img.rings.ring_green.no-animate {
+section.first .aros img.rings.ring_green.no-animated {
     bottom: -80%;
     right: -46%;
 }
 
-section.first .aros img.rings.ring_green.animate {
+section.first .aros img.rings.ring_green.animated {
     bottom: 0%;
     right: 14%;
 }
 
-section.first .diapo.diapo_1.no-animate {
+section.first .diapo.diapo_1.no-animated {
     top: 0%;
 }
 
-section.first .diapo.diapo_1.animate,
-section.first .diapo.diapo_2.animate {
+section.first .diapo.diapo_1.animated,
+section.first .diapo.diapo_2.animated {
     top: -100%;
 }
 
-section.first .diapo.diapo_2 .text.no-animate {
+section.first .diapo.diapo_2 .text.no-animated {
     position: relative;
     top: 0px;
     left: -100%;
     opacity: 0;
 }
 
-section.first .diapo.diapo_2 .text.animate {
+section.first .diapo.diapo_2 .text.animated {
     position: relative;
     top: 0px;
     left: 0%;
@@ -172,11 +172,11 @@ section.first .diapo.diapo_2 .image {
     opacity: 0;
 }
 
-section.first .diapo.diapo_2 .claim.no-animate {
+section.first .diapo.diapo_2 .claim.no-animated {
     opacity: 0;
 }
 
-section.first .diapo.diapo_2 .claim.animate {
+section.first .diapo.diapo_2 .claim.animated {
     opacity: 1;
 }
 
@@ -186,11 +186,11 @@ section.first .diapo.diapo_2 .claim.animate {
 /* ********** Section 2 - ANIMATIONS ******************************************************************************** */
 
 
-section.second .diapo.diapo_1 .titulodesc.no-animate {
+section.second .diapo.diapo_1 .titulodesc.no-animated {
     opacity: 1;
 }
 
-section.second .diapo.diapo_1 .titulodesc.animate{
+section.second .diapo.diapo_1 .titulodesc.animated{
     opacity: 0;
 }
 
@@ -201,12 +201,12 @@ section.second .diapo.diapo_1 .img-esquina-r-t {
 section.second .diapo.diapo_1 .img-esquina-r-t img {
     transform: rotate(0deg);
 }
-section.second .diapo.diapo_1 .img-esquina-r-t.no-animate {
+section.second .diapo.diapo_1 .img-esquina-r-t.no-animated {
     transform: rotate(-18deg);
     transition: .5s;
 
 }
-section.second .diapo.diapo_1 .img-esquina-r-t.animate {
+section.second .diapo.diapo_1 .img-esquina-r-t.animated {
     top: 50%;
     right: 50%;
     transform: translateX(50%) translateY(-50%) rotate(0deg);
@@ -220,12 +220,12 @@ section.second .diapo.diapo_1 .img-esquina-l-b img {
     transform: rotate(0deg);
 }
 
-section.second .diapo.diapo_1 .img-esquina-l-b.no-animate {
+section.second .diapo.diapo_1 .img-esquina-l-b.no-animated {
     transform: rotate(13deg);
     transition: .5s;
 }
 
-section.second .diapo.diapo_1 .img-esquina-l-b.animate {
+section.second .diapo.diapo_1 .img-esquina-l-b.animated {
     bottom: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(50%) rotate(0deg);
@@ -247,20 +247,20 @@ section.second .diapo.diapo_1 .minidesc p {
     font-size: inherit;
 }
 
-section.second .diapo.diapo_1 .minidesc.no-animate {
+section.second .diapo.diapo_1 .minidesc.no-animated {
     opacity: 0;
 }
 
-section.second .diapo.diapo_1 .minidesc.animate {
+section.second .diapo.diapo_1 .minidesc.animated {
     opacity: 1;
 }
 
-section.second .diapo.diapo_1.no-animate {
+section.second .diapo.diapo_1.no-animated {
     top: 0%;
 }
 
-section.second .diapo.diapo_1.animate,
-section.second .diapo.diapo_2.animate {
+section.second .diapo.diapo_1.animated,
+section.second .diapo.diapo_2.animated {
     top: -100%;
 }
 
@@ -274,7 +274,7 @@ section.second .diapo.diapo_2 .buzon {
     opacity: 0;
 }
 
-section.second .diapo.diapo_2 .buzon.animate {
+section.second .diapo.diapo_2 .buzon.animated {
     transform: scale(5,5);
     opacity: 1;
 }
@@ -282,7 +282,7 @@ section.second .diapo.diapo_2 .buzon.animate {
 section.second .diapo.diapo_2 .sobre {
     position: absolute;
 }
-section.second .diapo.diapo_2 .sobre.no-animate {
+section.second .diapo.diapo_2 .sobre.no-animated {
     bottom: -160%;
     right: -57%;
 
@@ -291,6 +291,57 @@ section.second .diapo.diapo_2 .sobre.no-animate {
 
 
 
+/* ****************************************************************************************************************** */
+/* ********** Section 3 - ANIMATIONS ******************************************************************************** */
+
+section.third .diapo.diapo_1 .image_mariscal {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+section.third .diapo.diapo_1 .image_mariscal.no-animated {
+    position: absolute;
+    top: 600px;
+    left: -30%;
+    opacity: 0;
+}
+
+section.third .diapo.diapo_1 .image_mariscal.animated {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+}
+
+section.third .diapo.diapo_1 .image_cobiCirculo.no-animated {
+    position: absolute;
+    top: 800px;
+    left: 61%;
+    transform: translateX(-61%);
+    opacity: 0;
+}
+
+section.third .diapo.diapo_1 .image_cobiCirculo.animated {
+    position: absolute;
+    top: 0px;
+    left: 61%;
+    transform: translateX(-61%);
+    opacity: 1;
+}
+
+section.third .diapo.diapo_1 .image_cobiSello.no-animated {
+    position: absolute;
+    top: 600px;
+    right: -30%;
+    opacity: 0;
+}
+
+section.third .diapo.diapo_1 .image_cobiSello.animated {
+    position: absolute;
+    top: 0px;
+    right: -6%;
+    opacity: 1;
+}
 
 .scroll-down-wrap {
     position: fixed !important;
