@@ -690,6 +690,56 @@ section.six .diapo.diapo_6 .sello3.animated {
     margin-top: -220px;
 }
 
+section.six .diapo.diapo_7 .sello1.no-animated {
+    position: absolute;
+    top: 59%;
+    right: 12%;
+    height: auto;
+    transform: rotate(-3deg);
+}
+
+section.six .diapo.diapo_7 .sello1.animated {
+    top: 50%;
+    right: 50%;
+    transform: rotate(0deg);
+    margin-right: 150px;
+    height: auto;
+}
+
+section.six .diapo.diapo_7 .sello2.no-animated {
+    position: absolute;
+    top: 54%;
+    right: 16%;
+    height: auto;
+    transform: rotate(3deg);
+}
+
+section.six .diapo.diapo_7 .sello2.animated {
+    top: 50%;
+    right: 50%;
+    transform: rotate(0deg);
+    margin-right: -155px;
+    height: auto;
+}
+
+
+section.six .diapo.diapo_7 .sello3.no-animated {
+    position: absolute;
+    top: 55%;
+    right: 20%;
+    height: auto;
+    transform: rotate(3deg);
+}
+
+section.six .diapo.diapo_7 .sello3.animated {
+    top: 50%;
+    right: 50%;
+    transform: rotate(0deg);
+    margin-right: -465px;
+    height: auto;
+}
+
+
 
 
 
