@@ -563,7 +563,8 @@ section.six .diapo.diapo_4 .sello1.animated {
     position: absolute;
     top: 35%;
     margin-top: -100px;
-    right: 15%;
+    left: 50%;
+    margin-left: 150px;
 }
 
 section.six .diapo.diapo_4 .sello2.no-animated {
@@ -590,7 +591,8 @@ section.six .diapo.diapo_4 .sello3.animated {
     position: absolute;
     top: 35%;
     margin-top: -100px;
-    left: 15%;
+    left: 50%;
+    margin-left: -470px;
 }
 
 
