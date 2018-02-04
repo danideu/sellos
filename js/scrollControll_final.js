@@ -13,7 +13,6 @@ jQuery(document).ready(function($) {
 
         if (actualHash === parseInt(actualHash, 10)) {
             document.location.hash = actualHash;
-            SCROLLCONTROL_moveSection(actualHash);
         } else {
             actualHash = 1;
             document.location.hash = actualHash;
@@ -61,7 +60,15 @@ function right () {
 
 }
 
-function    SCROLL_FULLPAGE_init () {
+window.addEventListener("hashchange", SCROLLCONTROL_hashChange, false);
+
+function SCROLLCONTROL_hashChange () {
+    var actualHash = parseInt(document.location.hash.replace("#", ""));
+
+    SCROLLCONTROL_moveSection(actualHash);
+}
+
+function SCROLL_FULLPAGE_init () {
     jQuery("section").height(jQuery(window).height());
 }
 
@@ -102,8 +109,6 @@ function SCROLLCONTROL_executeMove (moveTo, forcedHash) {
                var sectionToMove_index = parseInt(actualHash) - 1;
                if (sectionToMove_index > 0) {
                    window.location.hash = sectionToMove_index;
-
-                   SCROLLCONTROL_moveSection(sectionToMove_index);
                }
            }
        break;
@@ -125,8 +130,6 @@ function SCROLLCONTROL_executeMove (moveTo, forcedHash) {
                actualHash = parseInt(document.location.hash.replace("#", ""));
                var sectionToMove_index = parseInt(actualHash) + 1;
                window.location.hash = sectionToMove_index;
-
-               SCROLLCONTROL_moveSection(sectionToMove_index);
            }
        break;
     }
