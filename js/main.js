@@ -20,6 +20,9 @@
 
     navigation: true,
     responsiveWidth: 415,
+    anchors: ['firstsection'],
+    //anchors: ['firstsection','presentacion','emisionspre','emisionsolim','arreudelmon','lemprempta'],
+    //menu: '#menu',
     onLeave: function(index, nextIndex, direction) {
     
       /**
@@ -317,4 +320,23 @@ $(document).on("fullscreenchange", function() {
       $('.fullscreen').removeClass('full');
     }
 });
+
+$(document).ready(function() {
+  $(".hamburguer").on("click", abrirMenu);
+  $("#menu a").on("click", abrirMenu);
+
+  function abrirMenu(){
+    //$(this).toggleClass("close-hamburguer");
+    $(".hamburguer").toggleClass("close-hamburguer");
+    $(".full-menu").toggleClass("active");
+  }
+
+  //$(".hamburguer").toggleClass("active");  
+  //$(".hamburguer").toggleClass("close-hamburguer");
+});
+//Using Vanilla JS
+/*document.querySelector(".hamburguer").addEventListener("click", function(){
+  document.querySelector(".full-menu").classList.toggle("active");
+  document.querySelector(".hamburguer").classList.toggle("close-hamburguer");
+});*/
 
