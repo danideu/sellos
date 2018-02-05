@@ -829,11 +829,16 @@ function SCROLLCONTROL_navigation_generate () {
 
     jQuery(scrollNavigationUL).find("li").remove();
 
-    jQuery("section").each(function () {
+    jQuery("section").each(function (navigationElement_key) {
         var sectionTitle = jQuery(this).attr("id");
         jQuery("<li><a href='javascript:void(null)' alt='" + sectionTitle + "'><span></span></a></li>").appendTo(scrollNavigationUL);
 
-        var navigationElement = jQuery(".scrollNavigation ul").last();
+        var navigationElement = jQuery(".scrollNavigation ul li").last();
+        var theSectionReferer = jQuery("section").get(navigationElement_key);
+
+        if (!jQuery(theSectionReferer).hasClass("anchorOnVerticalNavigation")) {
+            jQuery(navigationElement).hide();
+        }
 
     })
 }
