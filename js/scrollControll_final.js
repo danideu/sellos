@@ -814,6 +814,8 @@ function SCROLLCONTROL_beforeSection_activeAnimations(sectionNumber) {
 function SCROLLCONTROL_navigation_generate () {
     var scrollNavigationUL = jQuery(".scrollNavigation ul");
 
+    jQuery(scrollNavigationUL).find("li").remove();
+
     jQuery("section").each(function () {
         var sectionTitle = jQuery(this).attr("id");
         jQuery("<li><a href='javascript:void(null)' alt='" + sectionTitle + "'><span></span></a></li>").appendTo(scrollNavigationUL);
