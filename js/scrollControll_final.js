@@ -1,4 +1,6 @@
 
+var mobileBreakPoint = 768;
+
 jQuery(document).ready(function($) {
     SCROLL_FULLPAGE_init();
 
@@ -28,14 +30,20 @@ jQuery(window).on("resize", function () {
     SCROLL_FULLPAGE_init();
 });
 
-jQuery("body").scrollsteps({
-    up: prev,  // callback for the UP step scroll event, all the events are of course optional
-    down: next,  // callback for the DOWN step scroll event
-    left: left,  // callback for the UP step scroll event, all the events are of course optional
-    right: right,  // callback for the DOWN step scroll event
-    transitionDuration: 1200, // Duration of the main transition event, for example page transitions in a fullPage scroller.
-    quietPeriodBetweenTwoScrollEvents: 200, // Increases responsiveness, minimum delay between two quiet periods (no scroll events) to force the transition event if the transitionDuration is not completed.
-});
+var windowWidth = jQuery( window ).width();
+if (windowWidth >= mobileBreakPoint) {
+    jQuery("body").scrollsteps({
+        up: prev,  // callback for the UP step scroll event, all the events are of course optional
+        down: next,  // callback for the DOWN step scroll event
+        left: left,  // callback for the UP step scroll event, all the events are of course optional
+        right: right,  // callback for the DOWN step scroll event
+        transitionDuration: 1200, // Duration of the main transition event, for example page transitions in a fullPage scroller.
+        quietPeriodBetweenTwoScrollEvents: 200, // Increases responsiveness, minimum delay between two quiet periods (no scroll events) to force the transition event if the transitionDuration is not completed.
+    });
+} else {
+    jQuery("body, html").css("overflow-y", "auto");
+    jQuery("section").height("auto");
+}
 
 jQuery(document).on('touchmove', function() { //touchmove works for iOS, I don't know if Android supports it
     jQuery(window).trigger('mousewheel');
@@ -73,7 +81,12 @@ function SCROLLCONTROL_hashChange () {
 }
 
 function SCROLL_FULLPAGE_init () {
-    jQuery("section").height(jQuery(window).height());
+    var windowWidth = jQuery( window ).width();
+    if (windowWidth >= mobileBreakPoint) {
+        jQuery("section").height(jQuery(window).height());
+    } else {
+        jQuery("section").height("auto");
+    }
 
     SCROLLCONTROL_navigation_generate();
     SCROLLCONTROL_navigation_event();
