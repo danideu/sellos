@@ -19,6 +19,8 @@ jQuery(document).ready(function($) {
         }
 
         console.log("Hash actual [" + actualHash + "]");
+
+        SCROLLCONTROL_navigation_update(actualHash);
     }, 300)
 });
 
@@ -66,10 +68,15 @@ function SCROLLCONTROL_hashChange () {
     var actualHash = parseInt(document.location.hash.replace("#", ""));
 
     SCROLLCONTROL_moveSection(actualHash);
+
+    SCROLLCONTROL_navigation_update(actualHash);
 }
 
 function SCROLL_FULLPAGE_init () {
     jQuery("section").height(jQuery(window).height());
+
+    SCROLLCONTROL_navigation_generate();
+    SCROLLCONTROL_navigation_event();
 }
 
 function SCROLLCONTROL_executeMove (moveTo, forcedHash) {
@@ -802,4 +809,41 @@ function SCROLLCONTROL_beforeSection_activeAnimations(sectionNumber) {
             });
         }
     }
+}
+
+function SCROLLCONTROL_navigation_generate () {
+    var scrollNavigationUL = jQuery(".scrollNavigation ul");
+
+    jQuery("section").each(function () {
+        var sectionTitle = jQuery(this).attr("id");
+        jQuery("<li><a href='javascript:void(null)' alt='" + sectionTitle + "'><span></span></a></li>").appendTo(scrollNavigationUL);
+
+        var navigationElement = jQuery(".scrollNavigation ul").last();
+
+    })
+}
+
+function SCROLLCONTROL_navigation_event () {
+    jQuery(".scrollNavigation ul li a").on("click", function () {
+        var actualElement_containerLI = jQuery(this).parent("li");
+
+        var actualIndex = jQuery(".scrollNavigation ul li").index(actualElement_containerLI);
+
+        window.location.hash = actualIndex + 1;
+    });
+}
+
+
+function SCROLLCONTROL_navigation_update (actualHash) {
+    actualHash = parseInt(actualHash);
+
+    var elementIndexToRemark = actualHash - 1;
+
+    console.log("SCROLLCONTROL_navigation_update [" + elementIndexToRemark + "]");
+    jQuery(".scrollNavigation ul li.active").removeClass("active");
+
+    console.log("Marcando elemento [" + elementIndexToRemark + "]");
+
+    var navigationElementToRemark = jQuery(".scrollNavigation ul li").get(elementIndexToRemark);
+    jQuery(navigationElementToRemark).addClass("active");
 }
