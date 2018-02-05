@@ -24,6 +24,57 @@ p{
   overflow: hidden;
 }
 
+/*Portada CSS*/
+
+#portada {
+    background: url(../img/portada/fondo.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.main {
+    position: relative;
+    padding: 0em 1.5em 0em 1.5em;
+    height: 100%;
+}
+
+.sello-contenedor {
+    height: 100%;
+}
+
+.sello {
+    height: 100%;
+    background: url(../img/portada/segell-portada.png);
+    background-size: cover;
+    margin-top: 30px;
+}
+
+.sello a.button {
+    position: absolute;
+    bottom: 12.222%;
+    left: 32.255%;
+    background: black;
+    padding: 20px 55px;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+
+.sobre {
+    width: 29%;
+    right: 0;
+    top: -66px;
+    position: absolute;
+    z-index: 9999;
+}
+
+.sobre img {
+    width: 100%;
+}
+
+/* Portadad CSS fin*/
+
 .icon, .share-button, .scroll-down-wrap{opacity: 0.6;}
 .icon:hover, .share-button:hover, .scroll-down-wrap:hover{opacity: 1;}
 

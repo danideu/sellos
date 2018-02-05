@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Sellos Olimpiadas Barcelona 92'</title>
+
+    <link rel="author" href=""/>
+    <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.6/jquery.fullPage.min.css" media="all">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css" media="all">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_final.css">
+
+</head>
+
+</head>
+<body id="portada">
+<div class="main">
+    <div class="sello-contenedor">
+        <div class="sello">
+            <!--<img src="img/portada/segell-portada.png" alt="Postal Barcelona 92'">-->
+            <a href="index.html" class="button">Entrar</a>
+        </div>
+    </div>
+    <div class="sobre-contenedor">
+        <div class="sobre">
+            <img src="img/portada/postal2.png" alt="Postal Barcelona 92'">
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+<script>
+    $( ".sobre" ).animate({
+        right: 0,
+    }, 2400);
+
+    $( ".sello" ).animate({
+        marginTop: 0,
+    }, 800);
+
+    $( "a.button" ).animate({
+        opacity: 1,
+    }, 2100);
+
+
+    /*
+  function colaEfectos(){
+  capa = $("#micapa");
+  capa.slideUp(1000);
+  capa.delay(2000)
+  capa.slideDown(1000);
+
+  capa.fadeTo(1500, 0.3).delay(3000).fadeTo(500, 1);
+
+  capa.delay(500);
+  capa.animate({
+    "font-size": "+=0.5em"
+  }, 1000, colaEfectos);
+  //alert (capa.queue().length)
+  }
+
+  $(document).ready(function(){
+  colaEfectos();
+  });
+  */
+</script>
+</body>
+</html>
