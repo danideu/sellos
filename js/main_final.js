@@ -23,15 +23,16 @@ postShareButtonClick = $(function (){
     function openIcons(){
         buttonWrapper.addClass("active");
         button.addClass("hidden");
-        buttonWrapper.animate({width: "286"}, 500);
+        buttonWrapper.animate({width: "236"}, 500);
         icons.animate({left: "0"}, 500);
     }
     
     function closeIcons(){
         buttonWrapper.removeClass("active");
-      button.removeClass("hidden");
+        button.removeClass("hidden");
+        buttonWrapper.animate({width: "134"}, 0);        
         icons.animate({left: "-286"}, 0);
-        buttonWrapper.animate({width: "178"}, 0);
+        
     }
     
     init();

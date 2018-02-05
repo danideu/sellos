@@ -28,7 +28,7 @@ p{
 .icon:hover, .share-button:hover, .scroll-down-wrap:hover{opacity: 1;}
 
 .scrolltotop{
-  position: absolute;
+  position: fixed;
   bottom: 22px;
   right: 8px;
   z-index: 999;
@@ -688,7 +688,7 @@ p{
   overflow: hidden;
   width: 134px;
   height: 40px;
-  top: 60px;
+  top: 25px;
   left: 15px;
   text-transform: uppercase;
   font-size: 14px;
@@ -718,13 +718,14 @@ p{
   color: #e4e9ea;
 }
 .share-button .icon-wrapper ul li:last-child a:hover i{
-  color: red;
+  color: #000;
 }
 .share-button .icon-wrapper{
     position: absolute;
     left: -286px;
     top: 0;
-    width: 286px;
+    /*width: 286px;*/
+    width: 232px;
 }
 
 .share-button .icon-wrapper > a{
@@ -772,8 +773,7 @@ p{
   display: block;
   overflow: show;
   position: absolute;
-  top: 60px;
-  /*right: 60px;*/
+  top: 25px;
   right: 15px;
   z-index: 999;
 }
@@ -1158,7 +1158,8 @@ p{
       font-size: 36px;
     }
     .share-button, .icon, #fp-nav, .scroll-down-wrap, .aros, 
-    .scrolltotop, .previs-tarjeta, .seven h1, .seven .previs-top, .zoom{
+    .scrolltotop, .previs-tarjeta, .seven h1, .seven .previs-top, 
+    .zoom, .scrollNavigation{
       display: none;
     }
 
@@ -1274,6 +1275,7 @@ p{
     width: 100%;
     height: 100%;
     padding-top: 15%;
+    display: block !important;
   }
   .full-menu li {
     font-size: 24px;
