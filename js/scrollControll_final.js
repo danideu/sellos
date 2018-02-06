@@ -53,6 +53,18 @@ jQuery(window).bind('hashchange', function() {
     console.log(window.location.hash);
 });
 
+jQuery(document).keydown(function(e) {
+    switch (e.keyCode) {
+        case 38: // UP
+            SCROLLCONTROL_executeMove("up");
+        break;
+
+        case 40: // DOWN
+            SCROLLCONTROL_executeMove("down");
+        break;
+    }
+});
+
 
 function prev () {
     SCROLLCONTROL_executeMove("up");
