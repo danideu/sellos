@@ -41,8 +41,9 @@
     .imgmw320 {
       max-width: 275px;
     }
-
+    /*
     .sello_mobile{height: 100%;}
+    
     .sello_mobile img{
       position: absolute;
       left: 50%;
@@ -50,7 +51,7 @@
       transform: translate(-50%, -50%);
       -webkit-transform: translate(-50%, -50%);
       width: 100%;
-    }
+    }*/
 
     .fondo6{
       background: url(../img/seis/fondo_movil.jpg) no-repeat;
@@ -62,7 +63,11 @@
     margin: 0 auto;
     position: relative;
     }
-
+    .absolute-bottom-1{
+      position: relative;
+      right: 0;
+      bottom: 0;
+    }
     section.second .diapo.diapo_2 .sobre {
       position: relative;
       transform: scale(0.4, 0.4);
