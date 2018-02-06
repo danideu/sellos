@@ -240,13 +240,5 @@ $(document).ready(function() {
     $(".hamburguer").toggleClass("close-hamburguer");
     $(".full-menu").toggleClass("active");
   }
-
-  //$(".hamburguer").toggleClass("active");  
-  //$(".hamburguer").toggleClass("close-hamburguer");
 });
-//Using Vanilla JS
-/*document.querySelector(".hamburguer").addEventListener("click", function(){
-  document.querySelector(".full-menu").classList.toggle("active");
-  document.querySelector(".hamburguer").classList.toggle("close-hamburguer");
-});*/
 

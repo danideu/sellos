@@ -966,7 +966,8 @@ section.nine .diapo.diapo_1 .sello2 {
 
 
 section.nine .diapo.diapo_1 .sello2.animated {
-    bottom: 50%;
+    /*dani bottom: 50%;*/
+    bottom: 28%;
     margin-bottom: -240px;
     left: 50%;
     margin-left: -400px;
@@ -974,13 +975,18 @@ section.nine .diapo.diapo_1 .sello2.animated {
 }
 
 section.nine .diapo.diapo_1 .sello3.animated {
+    top: 2%;
+    right: 61%;
+    margin-right: -500px;
+    z-index: 6;
+}
+
+section.nine .diapo.diapo_1 .sello4.animated{
     top: 50%;
     right: 50%;
     margin-right: -500px;
     z-index: 1;
 }
-
-
 
 .scroll-down-wrap {
     position: fixed !important;

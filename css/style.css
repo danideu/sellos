@@ -199,6 +199,12 @@ p{
   bottom: -27%;
 }
 
+.previs-bottom-left3{
+  position: absolute;
+  left: 11%;
+  bottom: -29%;
+}
+
 .previs-tarjeta {
     position: absolute;
     right: 0;
@@ -260,10 +266,17 @@ p{
     right: -23%;
     bottom: -28%;
 }
+
 .previs-sello {
     position: absolute;
     right: -180px;
     bottom: -380px;
+}
+
+.absolute-bottom-1{
+  position: absolute;
+  right: -117px;
+  bottom: -278px;
 }
 
 .absolute-center{

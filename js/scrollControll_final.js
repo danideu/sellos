@@ -624,12 +624,14 @@ function SCROLLCONTROL_animateItem (hashIndex, itemIndex, animationForced) {
                     SCROLLCONTROL_animateUndo(jQuery("section.nine .diapo.diapo_1 .sello1"), animationForced);
                     SCROLLCONTROL_animateUndo(jQuery("section.nine .diapo.diapo_1 .sello2"), animationForced);
                     SCROLLCONTROL_animateUndo(jQuery("section.nine .diapo.diapo_1 .sello3"), animationForced);
+                    SCROLLCONTROL_animateUndo(jQuery("section.nine .diapo.diapo_1 .sello4"), animationForced);
                 break;
 
                 case 1:
                     SCROLLCONTROL_animateDo(jQuery("section.nine .diapo.diapo_1 .sello1"), animationForced);
                     SCROLLCONTROL_animateDo(jQuery("section.nine .diapo.diapo_1 .sello2"), animationForced);
                     SCROLLCONTROL_animateDo(jQuery("section.nine .diapo.diapo_1 .sello3"), animationForced);
+                    SCROLLCONTROL_animateDo(jQuery("section.nine .diapo.diapo_1 .sello4"), animationForced);
                 break;
             }
         break;
