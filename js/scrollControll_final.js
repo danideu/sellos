@@ -685,7 +685,8 @@ function SCROLLCONTROL_animateDo (elementReferer, animationForced) {
                 delayAnimation = 1;
             }
             jQuery('section.six .diapo.diapo_1 .part2').animate({
-                bottom: ["35%", 'easeOutQuint'],
+                //dani bottom: ["35%", 'easeOutQuint'],
+                bottom: ["24%", 'easeOutQuint'],
                 right: "0%",
             }, delayAnimation);
             if (animationForced === true) {

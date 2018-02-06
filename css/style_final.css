@@ -466,7 +466,7 @@ section.six .diapo.diapo_1 .part2 {
 }
 
 section.six .diapo.diapo_1 .part2 .sello {
-    transform: rotate(5deg);
+    //transform: rotate(5deg);
 }
 
 section.six .diapo.diapo_1 .part2.no-animated {
