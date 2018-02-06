@@ -833,7 +833,12 @@ function SCROLLCONTROL_navigation_generate () {
 
     jQuery("section").each(function (navigationElement_key) {
         var sectionTitle = jQuery(this).attr("id");
-        jQuery("<li><a href='javascript:void(null)' alt='" + sectionTitle + "'><span></span></a></li>").appendTo(scrollNavigationUL);
+        jQuery("<li>" +
+            "<a href='javascript:void(null)' alt='" + sectionTitle + "'>" +
+                "<span class='scrollNavigation_bull'></span>" +
+                "<span class='scrollNavigation_tooltip'>" + sectionTitle + "</span>" +
+            "</a>" +
+            "</li>").appendTo(scrollNavigationUL);
 
         var navigationElement = jQuery(".scrollNavigation ul li").last();
         var theSectionReferer = jQuery("section").get(navigationElement_key);
