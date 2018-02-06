@@ -3,7 +3,7 @@ body, html {
     overflow: hidden;
 }
 
-.full-menu {
+.full-menu, section .tooltip_title {
     display: none;
 }
 
