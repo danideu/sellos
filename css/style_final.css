@@ -268,8 +268,9 @@ section.second .diapo.diapo_1 .minidesc p {
     top: 0px;
     left: 0px;
     width: 100%;
-    padding: 0px 0px 0px 20px;
+    padding: 0px 0px 0px 0px;
     font-size: inherit;
+    text-align: center;
 }
 
 section.second .diapo.diapo_1 .minidesc.no-animated {
@@ -292,8 +293,8 @@ section.second .diapo.diapo_2.animated {
 section.second .diapo.diapo_2 .buzon {
     position: absolute;
     top: 50%;
-    left: 46%;
-    width: 6%;
+    left: 48%;
+    width: 5%;
     transform: scale(1,1) translateX(-46%) translateY(-50%);
     transition: .5s;
     opacity: 0;
@@ -617,7 +618,7 @@ section.six .diapo.diapo_5 .sello2.no-animated {
 
 section.six .diapo.diapo_5 .sello2.animated {
     position: absolute;
-    top: 40%;
+    top: 34%;
     left: 50%;
     margin-left: -166px;
     transform: rotate(0deg);
@@ -896,6 +897,7 @@ section.eight .diapo.diapo_1 .element1.animated {
     top: 50%;
     margin-top: -300px;
     transform: rotate(1deg);
+    z-index: 1;
 }
 
 section.eight .diapo.diapo_1 .element2.animated {
@@ -913,7 +915,7 @@ section.eight .diapo.diapo_1 .element3.animated {
     left: 50%;
     margin-left: -7%;
     margin-top: -425px;
-    z-index: 4;
+    z-index: 2;
     transform: rotate(0deg);
 }
 
@@ -923,7 +925,7 @@ section.eight .diapo.diapo_1 .element4.animated {
     left: 50%;
     margin-left: -36%;
     transform: rotate(0deg);
-    z-index: 4;
+    z-index: 3;
     bottom: auto;
 }
 
