@@ -1,6 +1,6 @@
 /*Portada CSS*/
 
-body{
+body, html{
     height: 100%;
 }
 
@@ -21,10 +21,21 @@ body{
 }
 
 #portada .sello {
+    position: relative;
     height: 100%;
     background: url(../img/portada/segell-portada.png);
     background-size: cover;
     margin-top: 30px;
+}
+
+#portada .sello.no-animated {
+    top: 100%;
+    opacity: 0;
+}
+
+#portada .sello.animated {
+    top: 0%;
+    opacity: 1;
 }
 
 #portada .sello a.button {
@@ -39,12 +50,38 @@ body{
     color: white;
 }
 
-#portada .sobre {
+#portada .sello a.button.no-animated {
+    opacity: 0;
+}
+
+#portada .sello a.button.animated {
+    opacity: 1;
+}
+
+
+#portada .sobre.animaed {
     width: 29%;
     right: 0;
     top: -66px;
     position: absolute;
     z-index: 9999;
+}
+
+#portada .sobre {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 100;
+}
+
+#portada .sobre.no-animated {
+    right: -50%;
+    opacity: 0;
+}
+
+#portada .sobre.animated {
+    right: 0%;
+    opacity: 1;
 }
 
 #portada .sobre img {
