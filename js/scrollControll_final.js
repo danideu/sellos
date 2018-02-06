@@ -844,16 +844,18 @@ function SCROLLCONTROL_navigation_generate () {
     jQuery(scrollNavigationUL).find("li").remove();
 
     jQuery("section").each(function (navigationElement_key) {
-        var sectionTitle = jQuery(this).attr("id");
+        var navigationElement = jQuery(".scrollNavigation ul li").last();
+        var theSectionReferer = jQuery("section").get(navigationElement_key);
+
+        var sectionTitle = jQuery(theSectionReferer).find(".tooltip_title").get(0);
+        sectionTitle = jQuery(sectionTitle).html();
+
         jQuery("<li>" +
             "<a href='javascript:void(null)' alt='" + sectionTitle + "'>" +
                 "<span class='scrollNavigation_bull'></span>" +
                 "<span class='scrollNavigation_tooltip'>" + sectionTitle + "</span>" +
             "</a>" +
             "</li>").appendTo(scrollNavigationUL);
-
-        var navigationElement = jQuery(".scrollNavigation ul li").last();
-        var theSectionReferer = jQuery("section").get(navigationElement_key);
 
         if (!jQuery(theSectionReferer).hasClass("anchorOnVerticalNavigation")) {
             jQuery(navigationElement).hide();

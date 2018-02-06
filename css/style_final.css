@@ -1043,6 +1043,8 @@ section.nine .diapo.diapo_1 .sello4.animated{
     font-size: 12px;
     color: #FFFFFF;
     text-transform: capitalize;
+    overflow: hidden;
+    white-space: nowrap;
     opacity: 0;
     transition: .5s;
 }
