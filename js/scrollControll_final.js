@@ -38,7 +38,7 @@ if (windowWidth >= mobileBreakPoint) {
         left: left,  // callback for the UP step scroll event, all the events are of course optional
         right: right,  // callback for the DOWN step scroll event
         transitionDuration: 1200, // Duration of the main transition event, for example page transitions in a fullPage scroller.
-        quietPeriodBetweenTwoScrollEvents: 200, // Increases responsiveness, minimum delay between two quiet periods (no scroll events) to force the transition event if the transitionDuration is not completed.
+        quietPeriodBetweenTwoScrollEvents: 50000, // Increases responsiveness, minimum delay between two quiet periods (no scroll events) to force the transition event if the transitionDuration is not completed.
     });
 } else {
     jQuery("body, html").css("overflow-y", "auto");
