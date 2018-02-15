@@ -22,7 +22,9 @@
 
     a:focus, a:hover{text-decoration: none;}
   
-
+    .block{
+      display: block;
+    }
     .sinbr br {
       display: none;
     }

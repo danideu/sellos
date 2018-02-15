@@ -1,4 +1,3 @@
-
 var mobileBreakPoint = 768;
 
 jQuery(document).ready(function($) {
