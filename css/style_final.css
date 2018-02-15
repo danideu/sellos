@@ -14,6 +14,8 @@ body, html {
 .row {
     width: 100%;
 }
+
+.z999{z-index: 999;}
 section {
     position: relative;
 }
@@ -1059,3 +1061,22 @@ section.nine .diapo.diapo_1 .sello4.animated{
     opacity: 1;
     transition: .5s;
 }
+
+.creditos{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background: black;
+    z-index: 9999;
+    padding: 20px 40px;
+}
+
+.creditos .column{
+    float: left;
+    padding-right: 120px;
+    font-size: 13px;
+    font-weight: 100;
+}
+
+.creditos .column h3{font-weight: bold;}
