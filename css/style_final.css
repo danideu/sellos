@@ -331,6 +331,7 @@ section.second .diapo.diapo_3 .sobre2.no-animated {
 section.second .diapo.diapo_3 .sobre2.animated {
     position: absolute;
     right: 12%;
+    top: 15%;
     opacity: 1;
 }
 
@@ -1091,7 +1092,7 @@ section.nine .diapo.diapo_1 .sello4.animated{
     height: auto;
     background: black;
     z-index: 9999;
-    padding: 20px 40px;
+    padding-left: 40px;
 }
 
 .creditos .column{

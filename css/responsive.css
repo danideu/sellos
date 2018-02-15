@@ -43,17 +43,6 @@
     .imgmw320 {
       max-width: 275px;
     }
-    /*
-    .sello_mobile{height: 100%;}
-    
-    .sello_mobile img{
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      -webkit-transform: translate(-50%, -50%);
-      width: 100%;
-    }*/
 
     .fondo6{
       background: url(../img/seis/fondo_movil.jpg) no-repeat;
@@ -221,6 +210,17 @@
       transition: .5s;
       opacity: 1;
     }
+
+    section.second .diapo.diapo_3 .buzon2.no-animated {
+      opacity: 1;
+      width: 128px;
+      height: auto;
+      margin-left: 36%;
+    }
+    section.second .diapo.diapo_3 .sobre2.no-animated{
+      display: none;
+    }
+
     section.first .diapo.diapo_2 .text.no-animated, section.first .diapo.diapo_2 .image {
       position: relative;
       top: 0px;
@@ -473,6 +473,17 @@
   }
   .close-hamburguer .line-bottom {
     transform: translateY(-200%) rotate(135deg);
+  }
+  .creditos {
+    position: relative;
+    /* bottom: 0; */
+    width: 100%;
+    height: auto;
+    background: black;
+    z-index: 9999;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    overflow: hidden;
   }
 
 }

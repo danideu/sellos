@@ -276,7 +276,8 @@ p{
 .absolute-bottom-1{
   position: absolute;
   right: -117px;
-  bottom: -278px;
+  /*bottom: -278px;*/
+  bottom: -150px;
 }
 
 .absolute-center{
