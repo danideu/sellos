@@ -240,6 +240,16 @@ function SCROLLCONTROL_animateItem (hashIndex, itemIndex, animationForced) {
                 break;
 
                 case 1:
+                    setTimeout(function () {
+                        jQuery("section.second .diapo").animate({
+                            top: "0%"
+                        }, 500);
+                    }, 500);
+
+                    SCROLLCONTROL_animateUndo(jQuery("section.second .diapo.diapo_2"), animationForced);
+                    SCROLLCONTROL_animateUndo(jQuery("section.second .diapo.diapo_2 .buzon"), animationForced);
+                    SCROLLCONTROL_animateUndo("section2-diapo2-sobre", animationForced);
+
                     SCROLLCONTROL_animateDo(jQuery("section.second .diapo.diapo_1 .img-esquina-r-t"), animationForced);
                     SCROLLCONTROL_animateDo(jQuery("section.second .diapo.diapo_1 .img-esquina-l-b"), animationForced);
                     SCROLLCONTROL_animateDo(jQuery("section.second .diapo.diapo_1 .titulodesc"), animationForced);
@@ -248,19 +258,20 @@ function SCROLLCONTROL_animateItem (hashIndex, itemIndex, animationForced) {
                         SCROLLCONTROL_animateDo(jQuery("section.second .diapo.diapo_1 .minidesc"), animationForced);
                     }, 1000);
 
-                    SCROLLCONTROL_animateUndo(jQuery("section.second .diapo.diapo_2 .buzon"), animationForced);
-                    SCROLLCONTROL_animateUndo("section2-diapo2-sobre", animationForced);
-
-                    setTimeout(function () {
-                        SCROLLCONTROL_animateUndo(jQuery("section.second .diapo.diapo_1"), animationForced);
-                        SCROLLCONTROL_animateUndo(jQuery("section.second .diapo.diapo_2"), animationForced);
-                    }, 500);
                 break;
 
                 case 2:
-                    SCROLLCONTROL_animateDo(jQuery("section.second .diapo.diapo_1"), animationForced);
-                    SCROLLCONTROL_animateDo(jQuery("section.second .diapo.diapo_2"), animationForced);
+                    jQuery("section.second .diapo").animate({
+                        top: "-100%"
+                    }, 500);
+                    SCROLLCONTROL_animateUndo(jQuery("section.second .diapo.diapo_3"), animationForced);
+                    SCROLLCONTROL_animateUndo(jQuery("section.second .diapo.diapo_3 .buzon2"), animationForced);
+                    setTimeout(function () {
+                        SCROLLCONTROL_animateUndo(jQuery("section.second .diapo.diapo_3 .sobre2"), animationForced);
+                    }, 500);
 
+
+                    SCROLLCONTROL_animateDo(jQuery("section.second .diapo.diapo_2"), animationForced);
                     SCROLLCONTROL_animateDo(jQuery("section.second .diapo.diapo_2 .buzon"), animationForced);
                     setTimeout(function () {
                         SCROLLCONTROL_animateDo("section2-diapo2-sobre", animationForced);
@@ -269,7 +280,15 @@ function SCROLLCONTROL_animateItem (hashIndex, itemIndex, animationForced) {
                 break;
 
                 case 3:
+                    jQuery("section.second .diapo").animate({
+                        top: "-200%"
+                    }, 500);
+                    SCROLLCONTROL_animateDo(jQuery("section.second .diapo.diapo_3"), animationForced);
 
+                    SCROLLCONTROL_animateDo(jQuery("section.second .diapo.diapo_3 .buzon2"), animationForced);
+                    setTimeout(function () {
+                        SCROLLCONTROL_animateDo(jQuery("section.second .diapo.diapo_3 .sobre2"), animationForced);
+                    }, 500);
                 break;
 
             }

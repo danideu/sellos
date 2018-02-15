@@ -314,6 +314,26 @@ section.second .diapo.diapo_2 .sobre.no-animated {
 }
 
 
+
+section.second .diapo.diapo_3 .buzon2.no-animated {
+    opacity: 0;
+}
+
+section.second .diapo.diapo_3 .buzon2.animated {
+    opacity: 1;
+}
+
+section.second .diapo.diapo_3 .sobre2.no-animated {
+    position: absolute;
+    right: -50%;
+    opacity: 0;
+}
+section.second .diapo.diapo_3 .sobre2.animated {
+    position: absolute;
+    right: 12%;
+    opacity: 1;
+}
+
 /* ****************************************************************************************************************** */
 /* ********** Section 3 - ANIMATIONS ******************************************************************************** */
 
