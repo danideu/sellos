@@ -46,6 +46,11 @@ section {
     position: relative;
 }
 
+.second .diapo_2 h1 {
+    font-size: 36px;
+    padding-bottom: 0;
+}
+
 /*
 .invisible {
     opacity: 0;
