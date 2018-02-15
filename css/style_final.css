@@ -347,6 +347,7 @@ section.third .diapo.diapo_1 .image_mariscal.no-animated {
     top: 600px;
     left: -30%;
     opacity: 0;
+    width: 30%;
 }
 
 section.third .diapo.diapo_1 .image_mariscal.animated {
@@ -360,9 +361,9 @@ section.third .diapo.diapo_1 .image_mariscal.animated {
 section.third .diapo.diapo_1 .image_cobiCirculo.no-animated {
     position: absolute;
     top: 800px;
-    left: 61%;
-    transform: translateX(-61%);
+    left: 50%;
     opacity: 0;
+    width: 30%;
 }
 
 section.third .diapo.diapo_1 .image_cobiCirculo.animated {
@@ -380,6 +381,7 @@ section.third .diapo.diapo_1 .image_cobiSello.no-animated {
     top: 600px;
     right: -30%;
     opacity: 0;
+    width: 30%;
 }
 
 section.third .diapo.diapo_1 .image_cobiSello.animated {
