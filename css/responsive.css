@@ -64,6 +64,17 @@
       transform: scale(0.4, 0.4);
     }
 
+    section.second .diapo.diapo_1 .img-esquina-r-t{
+      transform: inherit !important;
+      padding-left: 0;
+      top: inherit;
+    }
+
+    section.second .diapo.diapo_1 .img-esquina-l-b{
+      padding-right: 0;
+      transform: inherit !important;
+    }
+
     section.fourth .diapo.diapo_1 .part2.no-animated {
       top: 0;
       margin-top: 0;
