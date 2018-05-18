@@ -106,6 +106,16 @@ function SCROLL_FULLPAGE_init () {
 
     SCROLLCONTROL_navigation_generate();
     SCROLLCONTROL_navigation_event();
+
+    SCROLLCONTROL_startButtonHandler();
+}
+
+function SCROLLCONTROL_startButtonHandler () {
+    if (jQuery(".start a").length) {
+      jQuery(".start a").on("click", function () {
+        SCROLLCONTROL_executeMove("down");
+      })
+    }
 }
 
 function SCROLLCONTROL_executeMove (moveTo, forcedHash) {
@@ -140,6 +150,10 @@ function SCROLLCONTROL_executeMove (moveTo, forcedHash) {
 
                SCROLLCONTROL_animateItem(animateItem_sectionIndex, animateItem_itemIndex);
 
+               if (actualSection_itemToNoAnimate === 0) {
+                 jQuery(".start a").fadeIn("slow");
+               }
+
            } else {
                actualHash = parseInt(document.location.hash.replace("#", ""));
                var sectionToMove_index = parseInt(actualHash) - 1;
@@ -151,6 +165,8 @@ function SCROLLCONTROL_executeMove (moveTo, forcedHash) {
 
        case "down":
            console.log("Bajando");
+
+           jQuery(".start a").fadeOut("slow");
 
            var actualSection_itemToAnimate_index =  jQuery(actualSection).find(".step.animated").length;
 
