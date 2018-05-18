@@ -64,6 +64,11 @@ jQuery(document).keydown(function(e) {
     }
 });
 
+//Danideu
+/*jQuery(".section-down-arrow").click(function(){
+    SCROLLCONTROL_executeMove("down");
+    console.log('Pulsa sobre ratoncito');
+});*/
 
 function prev () {
     SCROLLCONTROL_executeMove("up");
@@ -679,7 +684,8 @@ function SCROLLCONTROL_animateDo (elementReferer, animationForced) {
                 delayAnimation = 1;
             }
             jQuery('section.first .diapo.diapo_2 .image').animate({
-                bottom: [-30, 'easeOutQuint'],
+                //bottom: [-30, 'easeOutQuint'],
+                bottom: [-75, 'easeOutQuint'],
                 right: 0,
                 opacity: 1
             }, delayAnimation);

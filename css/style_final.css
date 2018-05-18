@@ -214,6 +214,7 @@ section.first .diapo.diapo_2 .claim.animated {
 
 section.second .diapo.diapo_1 .titulodesc.no-animated {
     opacity: 1;
+    padding-top: 0 !important;
 }
 
 section.second .diapo.diapo_1 .titulodesc.animated{
@@ -1107,4 +1108,4 @@ section.nine .diapo.diapo_1 .sello4.animated{
     font-weight: 100;
 }
 
-.creditos .column h3{font-weight: bold;}
+.creditos .column h3{font-weight: bold; font-size: 19px;}

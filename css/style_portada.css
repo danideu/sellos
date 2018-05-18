@@ -40,8 +40,10 @@ body, html{
 
 #portada .sello a.button {
     position: absolute;
-    bottom: 12.222%;
-    left: 32.255%;
+    /*bottom: 12.222%;*/
+    bottom: 10.222%;
+    /*left: 32.255%;*/
+    left: 35.155%;
     background: black;
     padding: 20px 55px;
     font-size: 22px;
@@ -80,12 +82,14 @@ body, html{
 }
 
 #portada .sobre.animated {
-    right: 0%;
+    /*right: 0%;*/
+    right: -14%;
     opacity: 1;
 }
 
 #portada .sobre img {
     width: 100%;
+    /*width: 95%;*/
 }
 
 
