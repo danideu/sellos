@@ -24,6 +24,10 @@ p{
   overflow: hidden;
 }
 
+.z999{
+  z-index: 999;
+}
+
 /*Portada CSS*/
 
 #portada {
@@ -580,7 +584,9 @@ p{
 	background: white;
 }
 
-
+#firstsection .diapo_1 h1 {
+    visibility: hidden;
+}
 
 /* Botonera Funcionalidades */
 

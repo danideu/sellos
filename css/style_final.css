@@ -214,6 +214,7 @@ section.first .diapo.diapo_2 .claim.animated {
 
 section.second .diapo.diapo_1 .titulodesc.no-animated {
     opacity: 1;
+    padding-top: 0 !important;
 }
 
 section.second .diapo.diapo_1 .titulodesc.animated{
@@ -1107,25 +1108,4 @@ section.nine .diapo.diapo_1 .sello4.animated{
     font-weight: 100;
 }
 
-.creditos .column h3{font-weight: bold;}
-
-.start {
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    z-index: 10000;
-}
-.start a {
-    position: relative;
-    left: -50%;
-    font-size: 20px;
-    color: #BFBBBC;
-    border: 2px solid #BFBBBC;
-    border-radius: 25px;
-    padding: 10px 20px;
-}
-
-.start a:hover {
-    color: #FFFEFD;
-    border-color: #FFFEFD;
-}
+.creditos .column h3{font-weight: bold; font-size: 19px;}
