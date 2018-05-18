@@ -1109,3 +1109,24 @@ section.nine .diapo.diapo_1 .sello4.animated{
 }
 
 .creditos .column h3{font-weight: bold; font-size: 19px;}
+
+.start {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    z-index: 10000;
+}
+.start a {
+    position: relative;
+    left: -50%;
+    font-size: 20px;
+    color: #BFBBBC;
+    border: 2px solid #BFBBBC;
+    border-radius: 25px;
+    padding: 10px 20px;
+}
+
+.start a:hover {
+    color: #FFFEFD;
+    border-color: #FFFEFD;
+}
