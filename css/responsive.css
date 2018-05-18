@@ -51,7 +51,9 @@
     .fondo6{
       background: url(../img/seis/fondo_movil.jpg) no-repeat;
     }
-
+    .start{
+      display: none;
+    }
     section.first .cobi.no-animated {
     left: 0;
     opacity: 1;
